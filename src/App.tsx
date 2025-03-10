@@ -185,7 +185,7 @@ const HomePage: React.FC = () => {
     }
   };
 
-  const tabContent: Record<ActiveTab, JSX.Element> = {
+  const tabContent: Record<ActiveTab, React.JSX.Element> = {
     trainings: (
       <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
         {events.map((event) => (
