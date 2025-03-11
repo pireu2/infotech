@@ -14,6 +14,7 @@ import {
   DialogTitle,
 } from "./components/ui/dialog";
 import { motion } from "framer-motion";
+import Footer from "./components/Footer"
 
 interface EventType {
   id: number;
@@ -64,7 +65,7 @@ const HomePage: React.FC = () => {
       date: "4th of December",
       location: "OA5 - CFDP",
       trainer: "Olimpia Pop",
-      image: "/assets/images/fin_edu.png",
+      image: "src/assets/images/trainings/finance.png",
       description:
         "Managing your finances effectively is a critical step toward achieving stability and reaching your long-term goals. In this training, Olimpia Pop will guide you through the essentials of personal finance, equipping you with practical tools to take control of your money. You'll learn how to create a realistic budget, manage your expenses wisely, and establish smart saving habits. Olimpia will also discuss strategies for setting financial goals, avoiding common financial pitfalls, and building a secure foundation for the future. This interactive session is designed to give you the knowledge and confidence to make informed financial decisions, whether you're managing your first paycheck or planning for bigger milestones. Take part and start your journey toward financial independence!",
     },
@@ -75,7 +76,7 @@ const HomePage: React.FC = () => {
       location:
         "The ground floor of the BT building (street George Barițiu nr. 4-8)",
       trainer: "Denisa Nita",
-      image: "/assets/images/wlb.png",
+      image: "src/assets/images/trainings/worklife.png",
       description:
         "Balancing personal well-being with professional aspirations is essential for success and fulfillment. In this training, Denisa Nita, an experienced psychologist, will guide you through strategies to create a healthier work-life balance and navigate common challenges. You'll learn practical tools to manage your priorities, reduce stress, and improve productivity. Denisa will also explore the impostor syndrome—an experience many students face when transitioning into the workforce—and share effective ways to overcome self-doubt and build confidence. This interactive session is designed to equip you with the skills and mindset needed to balance your career and personal life, ensuring long-term well-being and success. Join us and take the first step toward a more balanced and fulfilling life!",
     },
@@ -85,7 +86,7 @@ const HomePage: React.FC = () => {
       date: "November 21st, 20:00",
       location: "OA5 - CFDP",
       trainer: "Cristina Gogozan",
-      image: "/assets/images/interview.png",
+      image: "src/assets/images/trainings/interview.png",
       description:
         "A successful job interview can make all the difference when it comes to securing your ideal position. In this workshop, Cristina Gogozan will help you master the art of the job interview. You'll learn how to effectively prepare for interviews, including researching the company, anticipating common questions, and developing thoughtful responses. Cristina will also share strategies for building rapport with interviewers, communicating your strengths confidently, and handling tricky or unexpected questions. This interactive session will give you the practical skills and confidence needed to make a positive impression and stand out in any interview setting.",
     },
@@ -95,7 +96,7 @@ const HomePage: React.FC = () => {
       date: "November 7th, 18:00",
       location: "OA5 - CFDP",
       trainer: "Georgina Lupu (Gina)",
-      image: "/assets/images/start_UP.jpg",
+      image: "src/assets/images/trainings/startup.png",
       description:
         "Starting your own business can be both exciting and daunting. This workshop, led by Georgina Lupu, will take you through the fundamentals of launching a startup. You'll learn about identifying viable business ideas, developing a business plan, securing funding, and the key challenges faced by new entrepreneurs. Whether you're already working on a startup or just exploring the idea of entrepreneurship, this session will provide you with the tools and mindset needed to succeed.",
     },
@@ -105,7 +106,7 @@ const HomePage: React.FC = () => {
       date: "October 30th, 18:00",
       location: "A3 - CFDP",
       trainer: "Mariana Irimia",
-      image: "/assets/images/CV.jpg",
+      image: "src/assets/images/trainings/cv.png",
       description:
         "A well-crafted CV is often your first point of contact with potential employers, making it a crucial part of your job application process. In this workshop, led by Mariana Irimia, you'll learn how to structure and present your CV to highlight your most important skills and experiences. The session will cover common mistakes to avoid, tips for tailoring your CV to different industries, and how to stand out in a competitive job market. Mariana's expertise will help ensure that your CV leaves a strong impression and effectively communicates your qualifications to employers.",
     },
@@ -165,24 +166,24 @@ const HomePage: React.FC = () => {
   const sponsors: string[] = ["/assets/images/sponsori2024/arobs.png"];
 
   const content = {
-    about:{
-        en: {
-            title: "About Us",
-            paragraphs: [
-                "Welcome to InfoTech, your gateway to career growth and practical learning in the engineering world! Powered by OSUT Cluj (Organizația Studenților din Universitatea Tehnică), InfoTech is dedicated to empowering students at UTCN with the knowledge, skills, and connections needed to thrive in the IT industry.",
-                "At InfoTech, we create a supportive and engaging environment for students, with hands-on activities, career-oriented training sessions, and events like ContestNight, InfoNight, and Open Days at top companies. We host workshops led by industry professionals, offering guidance on essential skills like building resumes, acing interviews, and navigating career opportunities.",
-                " Whether you're here to build technical skills, grow your network, or just explore what's possible, InfoTech is here to support you every step of the way. Join us and take the next step toward achieving your career aspirations!"
-            ]
-        },
-        ro:{
-            title: "Despre Noi",
-            paragraphs: [
-                "Bine ai venit la InfoTech, poarta ta către dezvoltare profesională și învățare practică în lumea ingineriei! Susținut de OSUT Cluj (Organizația Studenților din Universitatea Tehnică), InfoTech este dedicat sprijinirii studenților de la UTCN prin oferirea cunoștințelor, abilităților și conexiunilor necesare pentru a reuși în industria IT.",
-                "La InfoTech, creăm un mediu de susținere și implicare pentru studenți, prin activități practice, sesiuni de formare orientate spre carieră și evenimente precum ContestNight, InfoNight și Open Days la companii de top. Organizăm workshopuri susținute de profesioniști din industrie, oferind îndrumare asupra unor abilități esențiale precum redactarea CV-ului, pregătirea pentru interviuri și explorarea oportunităților de carieră.",
-                "Fie că ești aici pentru a-ți dezvolta abilitățile tehnice, pentru a-ți extinde rețeaua de contacte sau doar pentru a explora noi posibilități, InfoTech este alături de tine la fiecare pas. Alătură-te nouă și fă următorul pas spre atingerea aspirațiilor tale profesionale!"
-            ]
-        }
-    }
+    about: {
+      en: {
+        title: "About Us",
+        paragraphs: [
+          "Welcome to InfoTech, your gateway to career growth and practical learning in the engineering world! Powered by OSUT Cluj (Organizația Studenților din Universitatea Tehnică), InfoTech is dedicated to empowering students at UTCN with the knowledge, skills, and connections needed to thrive in the IT industry.",
+          "At InfoTech, we create a supportive and engaging environment for students, with hands-on activities, career-oriented training sessions, and events like ContestNight, InfoNight, and Open Days at top companies. We host workshops led by industry professionals, offering guidance on essential skills like building resumes, acing interviews, and navigating career opportunities.",
+          " Whether you're here to build technical skills, grow your network, or just explore what's possible, InfoTech is here to support you every step of the way. Join us and take the next step toward achieving your career aspirations!",
+        ],
+      },
+      ro: {
+        title: "Despre Noi",
+        paragraphs: [
+          "Bine ai venit la InfoTech, poarta ta către dezvoltare profesională și învățare practică în lumea ingineriei! Susținut de OSUT Cluj (Organizația Studenților din Universitatea Tehnică), InfoTech este dedicat sprijinirii studenților de la UTCN prin oferirea cunoștințelor, abilităților și conexiunilor necesare pentru a reuși în industria IT.",
+          "La InfoTech, creăm un mediu de susținere și implicare pentru studenți, prin activități practice, sesiuni de formare orientate spre carieră și evenimente precum ContestNight, InfoNight și Open Days la companii de top. Organizăm workshopuri susținute de profesioniști din industrie, oferind îndrumare asupra unor abilități esențiale precum redactarea CV-ului, pregătirea pentru interviuri și explorarea oportunităților de carieră.",
+          "Fie că ești aici pentru a-ți dezvolta abilitățile tehnice, pentru a-ți extinde rețeaua de contacte sau doar pentru a explora noi posibilități, InfoTech este alături de tine la fiecare pas. Alătură-te nouă și fă următorul pas spre atingerea aspirațiilor tale profesionale!",
+        ],
+      },
+    },
   };
 
   const tabContent: Record<ActiveTab, React.JSX.Element> = {
@@ -463,11 +464,12 @@ const HomePage: React.FC = () => {
           {isRomanian ? content.about.ro.title : content.about.en.title}
         </h2>
         <div className="max-w-4xl mx-auto space-y-6 text-gray-300 text-lg">
-          {(isRomanian ? content.about.ro.paragraphs : content.about.en.paragraphs).map(
-            (paragraph, index) => (
-              <p key={index}>{paragraph}</p>
-            )
-          )}
+          {(isRomanian
+            ? content.about.ro.paragraphs
+            : content.about.en.paragraphs
+          ).map((paragraph, index) => (
+            <p key={index}>{paragraph}</p>
+          ))}
         </div>
       </section>
 
@@ -568,6 +570,7 @@ const HomePage: React.FC = () => {
           )}
         </DialogContent>
       </Dialog>
+      <Footer />
     </div>
   );
 };
