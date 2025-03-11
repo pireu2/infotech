@@ -1,3 +1,4 @@
+import type React from "react";
 import { useState } from "react";
 import {
   Card,
@@ -7,6 +8,7 @@ import {
   CardContent,
 } from "./components/ui/card";
 import { Button } from "./components/ui/button";
+import { Badge } from "./components/ui/badge";
 import {
   Dialog,
   DialogContent,
@@ -14,7 +16,9 @@ import {
   DialogTitle,
 } from "./components/ui/dialog";
 import { motion } from "framer-motion";
-import Footer from "./components/Footer"
+import Footer from "./components/footer";
+import Sidebar from "./components/sidebar";
+import TeamMemberCards from "./components/team-member-card";
 
 interface EventType {
   id: number;
@@ -24,13 +28,6 @@ interface EventType {
   trainer: string;
   image: string;
   description: string;
-}
-
-interface TeamMember {
-  name: string;
-  role: string;
-  image: string;
-  email: string;
 }
 
 type ActiveTab =
@@ -112,56 +109,7 @@ const HomePage: React.FC = () => {
     },
   ];
 
-  const teamMembers: TeamMember[] = [
-    {
-      name: "Spătăcean Giorgiana",
-      role: "BC Responsible",
-      image: "src/assets/echipa/gio.png",
-      email: "sgiorgiana02@gmail.com",
-    },
-    {
-      name: "Mozacu Ștefania",
-      role: "Coordinator",
-      image: "src/assets/echipa/stefi.png",
-      email: "stefaniamozacu1@gmail.com",
-    },
-    {
-      name: "Bereky Andra",
-      role: "PR Responsible",
-      image: "src/assets/echipa/andra.png",
-      email: "andraberecky4@gmail.com",
-    },
-    {
-      name: "Radu Andrei",
-      role: "Tehnic Responsible",
-      image: "src/assets/echipa/andrei.png",
-      email: "raduandreidaniel05@gmail.com",
-    },
-    {
-      name: "Ari Andrada",
-      role: "Co-coordinator",
-      image: "src/assets/echipa/ari.png",
-      email: "ari.andrada37@gmail.com",
-    },
-    {
-      name: "Privigyei Ana",
-      role: "Co-coordinator",
-      image: "src/assets/echipa/ana.png",
-      email: "privigyeialexandra@gmail.com",
-    },
-    {
-      name: "Florean Rareș",
-      role: "Co-coordinator",
-      image: "src/assets/echipa/rares.png",
-      email: "rares.gabiflorean@gmail.com",
-    },
-    {
-      name: "Popan Andreea",
-      role: "Secretary",
-      image: "src/assets/echipa/andreea.png",
-      email: "popanandreea0@gmail.com ",
-    },
-  ];
+
 
   const sponsors: string[] = ["/assets/images/sponsori2024/arobs.png"];
 
@@ -213,10 +161,11 @@ const HomePage: React.FC = () => {
       </div>
     ),
     contest: (
-      <div className="max-w-4xl mx-auto text-gray-300 text-lg space-y-6">
+      <div className="max-w-4xl mx-auto text-gray-300 text-lg space-y-8">
         <h2 className="text-3xl font-bold text-center text-purple-400">
           What to expect at ContestNight?
         </h2>
+
         <p>
           <b>ContestNight</b> is not just an event; it's an experience crafted
           to empower students to unlock new opportunities and take charge of
@@ -225,6 +174,7 @@ const HomePage: React.FC = () => {
           ContestNight brings together students, professionals, and
           organizations in one dynamic space.
         </p>
+
         <p>
           Curious about how to boost your resume with real-world experience?
           Interested in testing your skills in national or international
@@ -234,6 +184,7 @@ const HomePage: React.FC = () => {
           chance to talk directly to the people who can help you get involved,
           so you can find exactly what sparks your interest.
         </p>
+
         <p>
           But it's not all business—there's something for everyone! Enjoy live
           artistic performances, soak in the energetic atmosphere, and take a
@@ -241,42 +192,49 @@ const HomePage: React.FC = () => {
           between explorations. Whether you're into tech, the arts, sports, or
           something in between, you'll find something to ignite your interest.
         </p>
-        <h2>Why Should You Attend?</h2>
-        <ul>
-          <li>
-            <b>Networking:</b> Meet like-minded peers and connect with
-            representatives from leading student organizations and competitions.
-          </li>
-          <li>
-            <b>Inspiration:</b> Get hands-on information about a wide range of
-            student activities that can shape your future career.
-          </li>
-          <li>
-            <b>Entertainment:</b> From artistic performances to a welcoming
-            chill zone, ContestNight blends opportunity with fun in a way
-            that'll make you want to stay until the last minute.
-          </li>
-        </ul>
-        <h3>
-          <b>
-            Mark your calendars, tell your friends, and get ready to seize the
-            endless opportunities that await at ContestNight. Join us, discover
-            your next big adventure, and make your mark on campus and beyond!
-          </b>
+
+        <div className="space-y-4">
+          <h3 className="text-2xl font-semibold text-purple-400">
+            Why Should You Attend?
+          </h3>
+          <ul className="list-disc pl-6 space-y-2">
+            <li>
+              <b>Networking:</b> Meet like-minded peers and connect with
+              representatives from leading student organizations and
+              competitions.
+            </li>
+            <li>
+              <b>Inspiration:</b> Get hands-on information about a wide range of
+              student activities that can shape your future career.
+            </li>
+            <li>
+              <b>Entertainment:</b> From artistic performances to a welcoming
+              chill zone, ContestNight blends opportunity with fun in a way
+              that'll make you want to stay until the last minute.
+            </li>
+          </ul>
+        </div>
+
+        <h3 className="text-xl font-bold text-center text-purple-400">
+          Mark your calendars, tell your friends, and get ready to seize the
+          endless opportunities that await at ContestNight. Join us, discover
+          your next big adventure, and make your mark on campus and beyond!
         </h3>
       </div>
     ),
     opendays: (
-      <div className="max-w-4xl mx-auto text-gray-300 text-lg space-y-6">
+      <div className="max-w-4xl mx-auto text-gray-300 text-lg space-y-8">
         <h2 className="text-3xl font-bold text-center text-blue-400">
           What to expect at InfoTech OpenDays?
         </h2>
+
         <p>
           InfoTech OpenDays is an exciting event designed to connect students
           with industry leaders across IT, construction, and mechanical
           engineering. This event brings together students, professionals, and
           top companies for a day of discovery and growth.
         </p>
+
         <p>
           Are you interested in pursuing a career in construction, mechanical
           engineering, or IT? InfoTech OpenDays has something for everyone. Each
@@ -286,77 +244,114 @@ const HomePage: React.FC = () => {
           and network with industry professionals who can help guide your career
           development.
         </p>
-        <p>
+
+        <h3 className="text-xl font-bold text-center text-blue-400">
           Mark your calendars, invite your classmates, and join us at InfoTech
           OpenDays to explore a world of opportunities in IT, construction, and
           mechanical engineering!
-        </p>
+        </h3>
       </div>
     ),
     infonight: (
-      <div className="max-w-4xl mx-auto text-gray-300 text-lg space-y-6">
+      <div className="max-w-4xl mx-auto text-gray-300 text-lg space-y-8">
         <h2 className="text-3xl font-bold text-center text-yellow-400">
           What to expect at InfoNight?
         </h2>
+
         <p>
-          Looking to kick-start your career? InfoNight is your chance to connect
-          with top companies, meet industry professionals, and build valuable
-          relationships that can shape your future. Whether you're searching for
-          internships, full-time roles, or expert career advice, this event puts
-          you face-to-face with recruiters eager to meet talented students like
-          you. Plus, you’ll get the opportunity to have your CV reviewed by
-          specialists and gain insights that give you a competitive edge. Don’t
-          miss out—stay tuned for more details!
+          Looking to kick-start your career? <strong>InfoNight</strong> is your
+          chance to connect with top companies, meet industry professionals, and
+          build valuable relationships that can shape your future. Whether
+          you're searching for internships, full-time roles, or expert career
+          advice, this event puts you face-to-face with recruiters eager to meet
+          talented students like you. Plus, you'll get the opportunity to have
+          your CV reviewed by specialists and gain insights that give you a
+          competitive edge. Don't miss out—stay tuned for more details!
         </p>
 
-        {!expandedContent.infonight && (
+        {!expandedContent.infonight ? (
           <Button
             variant="outline"
-            className="text-yellow-400 border-yellow-400 hover:bg-yellow-400/10"
+            className="mb-8 py-2 px-4 bg-purple-500/10 border-yellow-500/50 text-yellow-300 backdrop-blur-sm shadow-lg shadow-yellow-500/20"
             onClick={() =>
               setExpandedContent((prev) => ({ ...prev, infonight: true }))
             }
           >
             Read More
           </Button>
-        )}
-
-        {expandedContent.infonight && (
+        ) : (
           <>
-            <p>
-              InfoNight is back for its third edition, offering you the
-              opportunity to take the next step in your career journey! This
-              event will take place on March 18th, from 16:00 to 22:00 at HUB
-              UTCN (George Barițiu Street, nr. 4-8). Whether you're just
-              starting your university journey or preparing to enter the
-              professional world, this is the perfect place to expand your
-              network, gain valuable insights, and explore exciting career
-              opportunities. At InfoNight, you’ll have the chance to meet
-              recruiters and experts from some of the most prestigious companies
-              in various industries. It’s more than just a chance to hand over
-              your CV—it’s an opportunity to learn firsthand from those who are
-              actively shaping the job market. This is your chance to build
-              connections with key industry leaders who can guide you toward the
-              career path you’ve always dreamed of. What’s in it for you? -Meet
-              industry experts – Connect with representatives from top
-              companies, explore job opportunities, and gain insights into your
-              future career. -Get expert CV feedback – Receive personalized
-              advice from recruiting specialists to make your CV stand out.
-              -Expand your network – Build valuable connections with career
-              mentors who can help you achieve your goals.. -Unwind & win –
-              Relax in our chill zone, and you might be one of the lucky winners
-              of exciting prizes! This is more than just an event; it’s a
-              platform for growth and exploration. Join us and discover the
-              countless opportunities that await you. Whether you're eager to
-              land your first internship, seeking full-time positions, or just
-              looking to gain career advice, InfoNight has something for
-              everyone. Don’t miss the third edition of InfoNight on March 18th!
-              Save the date, invite your friends, and get ready for an evening
-              of inspiration, networking, and career development.
-            </p>
+            <div className="space-y-4">
+              <p>
+                <strong>InfoNight</strong> is back for its third edition,
+                offering you the opportunity to take the next step in your
+                career journey! This event will take place on March 18th, from
+                16:00 to 22:00 at HUB UTCN (George Barițiu Street, nr. 4-8).
+              </p>
+
+              <p>
+                Whether you're just starting your university journey or
+                preparing to enter the professional world, this is the perfect
+                place to expand your network, gain valuable insights, and
+                explore exciting career opportunities.
+              </p>
+
+              <p>
+                At InfoNight, you'll have the chance to meet recruiters and
+                experts from some of the most prestigious companies in various
+                industries. It's more than just a chance to hand over your
+                CV—it's an opportunity to learn firsthand from those who are
+                actively shaping the job market.
+              </p>
+
+              <p>
+                This is your chance to build connections with key industry
+                leaders who can guide you toward the career path you've always
+                dreamed of.
+              </p>
+
+              <h3 className="text-xl font-semibold text-yellow-400 mt-6 mb-4">
+                What's in it for you?
+              </h3>
+              <ul className="list-disc pl-6 space-y-2">
+                <li>
+                  <strong>Meet industry experts</strong> - Connect with
+                  representatives from top companies, explore job opportunities,
+                  and gain insights into your future career.
+                </li>
+                <li>
+                  <strong>Get expert CV feedback</strong> - Receive personalized
+                  advice from recruiting specialists to make your CV stand out.
+                </li>
+                <li>
+                  <strong>Expand your network</strong> - Build valuable
+                  connections with career mentors who can help you achieve your
+                  goals.
+                </li>
+                <li>
+                  <strong>Unwind & win</strong> - Relax in our chill zone, and
+                  you might be one of the lucky winners of exciting prizes!
+                </li>
+              </ul>
+
+              <p>
+                This is more than just an event; it's a platform for growth and
+                exploration. Join us and discover the countless opportunities
+                that await you. Whether you're eager to land your first
+                internship, seeking full-time positions, or just looking to gain
+                career advice, InfoNight has something for everyone.
+              </p>
+
+              <p className="font-bold">
+                Don't miss the third edition of InfoNight on March 18th! Save
+                the date, invite your friends, and get ready for an evening of
+                inspiration, networking, and career development.
+              </p>
+            </div>
+
             <Button
               variant="outline"
-              className="text-yellow-400 border-yellow-400 hover:bg-yellow-400/10"
+              className="mb-8 py-2 px-4 bg-purple-500/10 border-yellow-500/50 text-yellow-300 backdrop-blur-sm shadow-lg shadow-yellow-500/20"
               onClick={() =>
                 setExpandedContent((prev) => ({ ...prev, infonight: false }))
               }
@@ -367,61 +362,85 @@ const HomePage: React.FC = () => {
         )}
       </div>
     ),
-
     infoweek: (
-      <div className="max-w-4xl mx-auto text-gray-300 text-lg space-y-6">
+      <div className="max-w-4xl mx-auto text-gray-300 text-lg space-y-8">
         <h2 className="text-3xl font-bold text-center text-green-400">
           What to expect at InfoWeek?
         </h2>
+
         <p>
-          Ever wondered what it’s like inside top companies? InfoWeek (March
-          24-28) gives you a sneak-peak to some of the most exciting workplaces
-          in and around Cluj-Napoca! Step behind the scenes, meet industry pros,
-          and explore career paths in real-world settings. Whether you’re
-          looking for inspiration, internships, or future job opportunities,
-          this is your chance to see where your skills and ambitions could take
-          you. Don’t just imagine your dream job—experience it!
+          Ever wondered what it's like inside top companies?{" "}
+          <strong>InfoWeek</strong> (March 24-28) gives you a sneak-peek at some
+          of the most exciting workplaces in and around Cluj-Napoca! Step behind
+          the scenes, meet industry pros, and explore career paths in real-world
+          settings. Whether you're looking for inspiration, internships, or
+          future job opportunities, this is your chance to see where your skills
+          and ambitions could take you. Don't just imagine your dream
+          job—experience it!
         </p>
 
-        {!expandedContent.infoweek && (
+        {!expandedContent.infoweek ? (
           <Button
             variant="outline"
-            className="text-green-400 border-green-400 hover:bg-green-400/10"
+            className="mb-8 py-2 px-4 bg-purple-500/10 border-green-500/50 text-green-300 backdrop-blur-sm shadow-lg shadow-green-500/20"
             onClick={() =>
               setExpandedContent((prev) => ({ ...prev, infoweek: true }))
             }
           >
             Read More
           </Button>
-        )}
-
-        {expandedContent.infoweek && (
+        ) : (
           <>
-            <p>
-              Curious about what it’s like to work in your field of interest?
-              InfoWeek, powered by InfoTech, offers you the chance to step
-              inside multiple top companies in and around Cluj-Napoca between
-              March 24-28. This is your opportunity to explore different
-              workplaces, meet industry experts, and see firsthand what a future
-              career could look like. Throughout the week, participating
-              companies will open their doors to students, offering guided
-              tours, insights into their work environment, and direct
-              interactions with professionals eager to share their experiences.
-              Whether you’re looking for internships, job opportunities, or
-              simply want to understand different career paths, InfoWeek is the
-              perfect chance to expand your perspective. Why join InfoWeek?
-              -Company insights – Experience different work environments and
-              learn about various industries. -Career connections – Meet
-              professionals and discover what skills and experiences employers
-              value most. -A full week of opportunities – With seven companies
-              hosting open days, there’s plenty to explore! Take advantage of
-              this chance to bridge the gap between university and the
-              professional world. Stay tuned for more details and get ready to
-              discover where your future could take you!
-            </p>
+            <div className="space-y-4">
+              <p>
+                Curious about what it's like to work in your field of interest?{" "}
+                <strong>InfoWeek</strong>, powered by InfoTech, offers you the
+                chance to step inside multiple top companies in and around eager
+                to share their experiences.Cluj-Napoca between March 24-28. This
+                is your opportunity to explore different workplaces, meet
+                industry experts, and see firsthand what a future career could
+                look like.
+              </p>
+              <p>
+                Throughout the week, participating companies will open
+                theirdoors to students, offering guided tours, insights into
+                their work environment, and direct interactions with
+                professionals eager to share their experiences.
+              </p>
+              <p>
+                Whether you're looking for internships, job opportunities, or
+                simply want to understand different career paths, InfoWeek is
+                the perfect chance to expand your perspective.
+              </p>
+
+              <h3 className="text-xl font-semibold text-green-400 mt-6 mb-4">
+                Why join <strong>InfoWeek</strong>?
+              </h3>
+              <ul className="list-disc pl-6 space-y-2">
+                <li>
+                  <strong>Company insights</strong> - Experience different work
+                  environments and learn about various industries.
+                </li>
+                <li>
+                  <strong>Career connections</strong> - Meet professionals and
+                  discover what skills and experiences employers value most.
+                </li>
+                <li>
+                  <strong>A full week of opportunities</strong> - With seven
+                  companies hosting open days, there's plenty to explore!
+                </li>
+              </ul>
+              <p>
+                Take advantage of this chance to bridge the gap between
+                university and the professional world. Stay tuned for more
+                details and get ready to discover where your future could take
+                you!
+              </p>
+            </div>
+
             <Button
               variant="outline"
-              className="text-green-400 border-green-400 hover:bg-green-400/10"
+              className="mb-8 py-2 px-4 bg-purple-500/10 border-green-500/50 text-green-300 backdrop-blur-sm shadow-lg shadow-green-500/20"
               onClick={() =>
                 setExpandedContent((prev) => ({ ...prev, infoweek: false }))
               }
@@ -434,32 +453,62 @@ const HomePage: React.FC = () => {
     ),
   };
 
+  // Define sections for the sidebar
+  const sections = [
+    { id: "hero", label: "Home" },
+    { id: "about", label: "About Us" },
+    { id: "events", label: "Events" },
+    { id: "team", label: "Our Team" },
+    { id: "sponsors", label: "Sponsors" },
+  ];
+
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-900  to-purple-900">
+    <div className="min-h-screen bg-[#0c0d1d] relative overflow-hidden">
+      {/* Background gradient effects */}
+      <div className="absolute inset-0">
+        <div className="absolute bg-purple-600/30 blur-[100px]" />
+      </div>
+
+      {/* Sidebar */}
+      <Sidebar sections={sections} />
+
       {/* Hero Section */}
-      <section className="relative h-screen flex items-center justify-center">
-        <div className="absolute inset-0 bg-gradient-to-r from-purple-500/20 to-blue-500/20 backdrop-blur-lg" />
-        <motion.img
-          src="src/assets/images/infotech.png"
-          className="relative z-10 w-96 animate-float"
-          alt="InfoTech Logo"
-          initial={{ opacity: 0, y: 50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-        />
+      <section
+        id="hero"
+        className="relative min-h-screen flex flex-col items-center justify-center text-center px-4"
+      >
+        <div className="max-w-4xl mx-auto">
+          <Badge
+            variant="outline"
+            className="mb-8 py-2 px-4 bg-purple-500/10 border-purple-500/50 text-purple-300 backdrop-blur-sm shadow-lg shadow-purple-500/20"
+          >
+            A new phase, a new opportunity
+          </Badge>
+
+          {/* Main Content */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            className="space-y-6"
+          >
+            <motion.img
+              src="src/assets/images/infotech.png"
+              className="relative z-10 animate-float"
+              alt="InfoTech Logo"
+              initial={{ opacity: 0, y: 50 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+            />
+            <p className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto">
+              Let's build your future together!
+            </p>
+          </motion.div>
+        </div>
       </section>
 
       {/* About Section */}
-      <section className="py-20 px-4 md:px-8 backdrop-blur-lg bg-gray-900/50">
-        <div className="absolute top-4 left-4">
-          <Button
-            onClick={() => setIsRomanian(!isRomanian)}
-            variant="outline"
-            className="bg-purple-600 hover:bg-purple-700 text-white border-none"
-          >
-            {isRomanian ? "English" : "Română"}
-          </Button>
-        </div>
+      <section id="about" className="py-20 px-4 md:px-8 relative z-10">
         <h2 className="text-4xl font-bold text-center mb-12 bg-gradient-to-r from-purple-400 to-blue-300 bg-clip-text text-transparent">
           {isRomanian ? content.about.ro.title : content.about.en.title}
         </h2>
@@ -471,10 +520,19 @@ const HomePage: React.FC = () => {
             <p key={index}>{paragraph}</p>
           ))}
         </div>
+        <div className="text-center pt-5">
+          <Button
+            onClick={() => setIsRomanian(!isRomanian)}
+            variant="outline"
+            className="mb-8 py-2 px-4 bg-purple-500/10 border-purple-500/50 text-purple-300 backdrop-blur-sm shadow-lg shadow-purple-500/20"
+          >
+            {isRomanian ? "English" : "Română"}
+          </Button>
+        </div>
       </section>
 
       {/* Events Section */}
-      <section className="py-20 px-4 md:px-8">
+      <section id="events" className="py-20 px-4 md:px-8 relative z-10">
         <h2 className="text-4xl font-bold text-center mb-12 bg-gradient-to-r from-purple-400 to-blue-300 bg-clip-text text-transparent">
           Events
         </h2>
@@ -485,8 +543,12 @@ const HomePage: React.FC = () => {
             return (
               <Button
                 key={tab}
-                variant={activeTab === tab ? "default" : "outline"}
-                className="rounded-full px-8 backdrop-blur-lg bg-gray-800/50 hover:bg-gray-700/50"
+                variant={activeTab === tab ? "outline" : "outline"}
+                className={`mb-8 py-2 px-4  border-purple-500/50  backdrop-blur-sm shadow-lg shadow-purple-500/20 ${
+                  activeTab === tab
+                    ? "bg-purple-600 hover:bg-purple-700 text-white"
+                    : "bg-gray-800/50 hover:bg-gray-700/50 text-gray-300"
+                }`}
                 onClick={() => setActiveTab(tab)}
               >
                 {label}
@@ -499,41 +561,13 @@ const HomePage: React.FC = () => {
       </section>
 
       {/* Team Section */}
-      <section className="py-20 px-4 md:px-8">
-        <h2 className="text-4xl font-bold text-center mb-12 bg-gradient-to-r from-purple-400 to-blue-300 bg-clip-text text-transparent">
-          Our Team
-        </h2>
-        <div className="grid md:grid-cols-4 gap-8 max-w-6xl mx-auto">
-          {teamMembers.map((member) => (
-            <Card
-              key={member.name}
-              className="bg-gray-800/30 backdrop-blur-lg border border-gray-700"
-            >
-              <img
-                src={member.image}
-                className="w-full h-64 object-cover rounded-t-lg"
-                alt={member.name}
-              />
-              <CardHeader>
-                <CardTitle className="text-purple-400">{member.name}</CardTitle>
-                <CardDescription className="text-gray-400">
-                  {member.role}
-                </CardDescription>
-                <a
-                  href={`mailto:${member.email}`}
-                  className="text-blue-400 hover:text-blue-300"
-                >
-                  <i className="fas fa-envelope mr-2" />
-                  Contact
-                </a>
-              </CardHeader>
-            </Card>
-          ))}
-        </div>
-      </section>
+      <TeamMemberCards />
 
       {/* Sponsors Section */}
-      <section className="py-20 px-4 md:px-8 overflow-hidden">
+      <section
+        id="sponsors"
+        className="py-20 px-4 md:px-8 overflow-hidden relative z-10"
+      >
         <h2 className="text-4xl font-bold text-center mb-12 bg-gradient-to-r from-purple-400 to-blue-300 bg-clip-text text-transparent">
           Sponsors
         </h2>
@@ -541,7 +575,7 @@ const HomePage: React.FC = () => {
           {sponsors.map((src, i) => (
             <img
               key={i}
-              src={src}
+              src={src || "/placeholder.svg"}
               className="h-24 mx-8 opacity-80 hover:opacity-100 transition-opacity"
               alt="Sponsor"
             />
