@@ -1,18 +1,37 @@
 import { FaFacebookF, FaInstagram, FaEnvelope } from "react-icons/fa";
+import { cn } from "../lib/utils";
 
 export default function Footer() {
   return (
-    <footer className="bg-black text-white py-6 text-center font-sans">
+    <footer
+      className={cn(
+        "relative overflow-hidden backdrop-blur-xl border-t border-purple-500/20 text-white py-10 font-sans",
+        "bg-gradient-to-b from-black/80 to-purple-900/20"
+      )}
+    >
+      {/* Background gradient effects - matching the main application */}
+      <div className="absolute inset-0 -z-10">
+        <div className="absolute top-0 left-1/4 w-96 h-96 bg-purple-600/20 rounded-full blur-[100px]" />
+        <div className="absolute bottom-0 right-1/4 w-72 h-72 bg-blue-600/20 rounded-full blur-[100px]" />
+        <div className="absolute bottom-1/2 left-1/3 w-64 h-64 bg-purple-700/10 rounded-full blur-[80px]" />
+      </div>
+
       <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between px-4">
         <div className="flex items-center gap-10">
-          <a href="https://www.utcluj.ro/">
+          <a
+            href="https://www.utcluj.ro/"
+            className="hover:opacity-80 transition-opacity"
+          >
             <img
               src="src/assets/images/utalb.png"
               alt="Logo"
               className="max-w-24"
             />
           </a>
-          <a href="https://osut.org/">
+          <a
+            href="https://osut.org/"
+            className="hover:opacity-80 transition-opacity"
+          >
             <img
               src="src/assets/images/osutalb.png"
               alt="Logo"
@@ -20,75 +39,92 @@ export default function Footer() {
             />
           </a>
         </div>
-        <div className="flex space-x-4 text-2xl mt-4 md:mt-0">
+        <div className="flex space-x-6 text-2xl mt-4 md:mt-0">
           <a
             href="https://www.facebook.com/infotech.osut"
-            className="hover:text-purple-600"
+            className="text-purple-300 hover:text-purple-400 transition-colors"
           >
-            <FaFacebookF />
+            <FaFacebookF className="hover:scale-110 transition-transform" />
           </a>
           <a
             href="https://www.instagram.com/infotech.osut/"
-            className="hover:text-purple-600"
+            className="text-purple-300 hover:text-purple-400 transition-colors"
           >
-            <FaInstagram />
+            <FaInstagram className="hover:scale-110 transition-transform" />
           </a>
           <a
             href="mailto:infotech.osutcluj@gmail.com"
-            className="hover:text-purple-600"
+            className="text-purple-300 hover:text-purple-400 transition-colors"
           >
-            <FaEnvelope />
+            <FaEnvelope className="hover:scale-110 transition-transform" />
           </a>
         </div>
       </div>
-      <hr className="border-t border-gray-400 my-6 w-11/12 mx-auto" />
-      <div className="flex flex-col md:flex-row items-center justify-around gap-8 text-gray-400 text-sm">
-        <a href="https://infotech.osut.org/">
-          <img src="src/assets/images/infotech.png" alt="Logo" className="max-w-36" />
+
+      <hr className="border-t border-purple-500/30 my-8 w-11/12 mx-auto" />
+
+      <div className="flex flex-col md:flex-row items-center justify-around gap-8 text-gray-300 text-sm">
+        <a
+          href="https://infotech.osut.org/"
+          className="hover:opacity-80 transition-opacity backdrop-blur-sm"
+        >
+          <img
+            src="src/assets/images/infotech.png"
+            alt="Logo"
+            className="max-w-36"
+          />
         </a>
-        <div className="text-center md:text-left">
-          <h3 className="text-white text-lg font-bold">Contact:</h3>
+        <div className="text-center md:text-left bg-gray-900/40 backdrop-blur-sm p-6 rounded-xl border border-purple-500/20 shadow-lg shadow-purple-500/10">
+          <h3 className="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-300 mb-3">
+            Contact:
+          </h3>
           <p>
-            <b>InfoTech</b>
+            <b className="text-white">InfoTech</b>
           </p>
           <p>
             Email:{" "}
             <a
               href="mailto:infotech.osutcluj@gmail.com"
-              className="hover:underline"
+              className="text-purple-300 hover:text-purple-200 hover:underline transition-colors"
             >
               infotech.osutcluj@gmail.com
             </a>
           </p>
-          <p>
-            <b>Mozacu Ștefania - Coordinator</b>
+          <p className="mt-3">
+            <b className="text-white">Mozacu Ștefania - Coordinator</b>
           </p>
           <p>
-            Phone: <i>0756032882</i>
+            Phone: <i className="text-purple-200">0756032882</i>
           </p>
           <p>
             Email:{" "}
             <a
               href="mailto:stefaniamozacu1@gmail.com"
-              className="hover:underline"
+              className="text-purple-300 hover:text-purple-200 hover:underline transition-colors"
             >
               stefaniamozacu1@gmail.com
             </a>
           </p>
-          <p>
-            <b>Spătăcean Giorgiana - BC Responsible</b>
+          <p className="mt-3">
+            <b className="text-white">Spătăcean Giorgiana - BC Responsible</b>
           </p>
           <p>
-            Phone: <i>0783054447</i>
+            Phone: <i className="text-purple-200">0783054447</i>
           </p>
           <p>
             Email:{" "}
-            <a href="mailto:sgiorgiana02@gmail.com" className="hover:underline">
+            <a
+              href="mailto:sgiorgiana02@gmail.com"
+              className="text-purple-300 hover:text-purple-200 hover:underline transition-colors"
+            >
               sgiorgiana02@gmail.com
             </a>
           </p>
         </div>
       </div>
+
+      {/* Additional subtle gradient effect */}
+      <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-purple-500/50 to-transparent"></div>
     </footer>
   );
 }

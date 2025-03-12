@@ -69,8 +69,8 @@ interface TeamMember {
 
 export default function TeamMemberCards() {
   return (
-    <div className="container py-12 mx-auto pl-3 pr-3">
-      <h2 className="text-3xl font-bold text-center mb-12 bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-purple-600">
+    <div id="team" className="container py-12 mx-auto pl-3 pr-3 z-3">
+      <h2 className="text-4xl font-bold text-center mb-12 bg-gradient-to-r from-purple-400 to-blue-300 bg-clip-text text-transparent">
         Our Team
       </h2>
       <div className="flex justify-center">

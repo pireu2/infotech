@@ -19,6 +19,7 @@ import { motion } from "framer-motion";
 import Footer from "./components/footer";
 import Sidebar from "./components/sidebar";
 import TeamMemberCards from "./components/team-member-card";
+import SponsorsDisplay from "./components/sponsors-display";
 
 interface EventType {
   id: number;
@@ -109,9 +110,7 @@ const HomePage: React.FC = () => {
     },
   ];
 
-
-
-  const sponsors: string[] = ["/assets/images/sponsori2024/arobs.png"];
+ 
 
   const content = {
     about: {
@@ -463,10 +462,30 @@ const HomePage: React.FC = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-[#0c0d1d] relative overflow-hidden">
-      {/* Background gradient effects */}
-      <div className="absolute inset-0">
-        <div className="absolute bg-purple-600/30 blur-[100px]" />
+    <div className="min-h-screen relative overflow-hidden bg-[#050314] ">
+      {/* Enhanced background gradient effects */}
+      <div className="absolute inset-0 z-0 overflow-hidden opacity-50 backdrop-blur-xl">
+        {/* Primary large gradients */}
+        <div className="absolute bottom-0 right-1/4 w-[500px] h-[500px] bg-blue-600/60 rounded-full blur-[150px] animate-pulse-slow" />
+        <div className="absolute top-1/3 right-1/3 w-[400px] h-[400px] bg-purple-700/50 rounded-full blur-[120px]" />
+        <div className="absolute bottom-1/4 left-1/3 w-[450px] h-[450px] bg-indigo-600/50 rounded-full blur-[130px]" />
+        <div className="absolute top-1/4 left-1/4 w-[350px] h-[350px] bg-yellow-600/50 rounded-full blur-[100px]" />
+        <div className="absolute bottom-1/2 right-1/2 w-[300px] h-[300px] bg-green-600/50 rounded-full blur-[90px]" />
+
+        {/* Secondary gradients for depth */}
+        <div className="absolute top-3/4 right-1/2 w-[350px] h-[350px] bg-fuchsia-600/40 rounded-full blur-[100px]" />
+        <div className="absolute top-1/2 left-1/4 w-[250px] h-[250px] bg-violet-600/45 rounded-full blur-[90px]" />
+        <div className="absolute top-1/4 right-1/4 w-[300px] h-[300px] bg-pink-600/30 rounded-full blur-[110px]" />
+        <div className="absolute bottom-1/2 left-1/2 w-[200px] h-[200px] bg-rose-600/35 rounded-full blur-[80px]" />
+        <div className="absolute bottom-1/3 right-1/4 w-[250px] h-[250px] bg-magenta-600/40 rounded-full blur-[90px]" />
+
+        {/* Additional gradients for more visual interest */}
+        <div className="absolute top-1/6 right-1/6 w-[200px] h-[200px] bg-cyan-600/25 rounded-full blur-[80px]" />
+        <div className="absolute top-1/6 left-1/6 w-[220px] h-[220px] bg-teal-600/20 rounded-full blur-[90px]" />
+        <div className="absolute bottom-1/6 left-1/6 w-[220px] h-[220px] bg-teal-600/20 rounded-full blur-[90px]" />
+        <div className="absolute bottom-1/6 left-1/6 w-[220px] h-[220px] bg-teal-600/20 rounded-full blur-[90px]" />
+        <div className="absolute top-2/3 right-1/3 w-[180px] h-[180px] bg-blue-500/20 rounded-full blur-[70px]" />
+        <div className="absolute bottom-1/3 right-2/3 w-[240px] h-[240px] bg-purple-800/25 rounded-full blur-[95px]" />
       </div>
 
       {/* Sidebar */}
@@ -475,35 +494,44 @@ const HomePage: React.FC = () => {
       {/* Hero Section */}
       <section
         id="hero"
-        className="relative min-h-screen flex flex-col items-center justify-center text-center px-4"
+        className="relative min-h-screen flex flex-col items-center justify-center text-center px-10 ml-10 mr-10"
       >
-        <div className="max-w-4xl mx-auto">
-          <Badge
-            variant="outline"
-            className="mb-8 py-2 px-4 bg-purple-500/10 border-purple-500/50 text-purple-300 backdrop-blur-sm shadow-lg shadow-purple-500/20"
-          >
-            A new phase, a new opportunity
-          </Badge>
+        <div className="max-w-4xl mx-auto relative">
+          {/* Glass card effect container */}
+          <div className="absolute inset-0 -m-10 bg-gradient-to-br from-purple-900/30 to-blue-900/20 rounded-2xl backdrop-blur-md border border-white/10 shadow-xl shadow-purple-500/10 z-0"></div>
 
-          {/* Main Content */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            className="space-y-6"
-          >
-            <motion.img
-              src="src/assets/images/infotech.png"
-              className="relative z-10 animate-float"
-              alt="InfoTech Logo"
-              initial={{ opacity: 0, y: 50 }}
+          {/* Inner glow effect */}
+          <div className="absolute inset-0 -m-10 rounded-2xl bg-gradient-to-br from-purple-500/5 to-blue-400/5 z-0"></div>
+
+          {/* Content with proper z-index */}
+          <div className="relative z-10 py-16 px-8">
+            <Badge
+              variant="outline"
+              className="mb-8 py-2 px-4 bg-purple-500/10 border-purple-500/50 text-purple-300 backdrop-blur-sm shadow-lg shadow-purple-500/20"
+            >
+              A new phase, a new opportunity
+            </Badge>
+
+            {/* Main Content */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
-            />
-            <p className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto">
-              Let's build your future together!
-            </p>
-          </motion.div>
+              className="space-y-6"
+            >
+              <motion.img
+                src="src/assets/images/infotech.png"
+                className="relative z-10 animate-float mx-auto"
+                alt="InfoTech Logo"
+                initial={{ opacity: 0, y: 50 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
+              />
+              <p className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto">
+                Let's build your future together!
+              </p>
+            </motion.div>
+          </div>
         </div>
       </section>
 
@@ -564,24 +592,7 @@ const HomePage: React.FC = () => {
       <TeamMemberCards />
 
       {/* Sponsors Section */}
-      <section
-        id="sponsors"
-        className="py-20 px-4 md:px-8 overflow-hidden relative z-10"
-      >
-        <h2 className="text-4xl font-bold text-center mb-12 bg-gradient-to-r from-purple-400 to-blue-300 bg-clip-text text-transparent">
-          Sponsors
-        </h2>
-        <div className="flex animate-marquee whitespace-nowrap">
-          {sponsors.map((src, i) => (
-            <img
-              key={i}
-              src={src || "/placeholder.svg"}
-              className="h-24 mx-8 opacity-80 hover:opacity-100 transition-opacity"
-              alt="Sponsor"
-            />
-          ))}
-        </div>
-      </section>
+      <SponsorsDisplay />
 
       {/* Event Modal */}
       <Dialog open={isModalOpen} onOpenChange={setIsModalOpen}>
