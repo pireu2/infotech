@@ -122,3 +122,10 @@
     @apply bg-background text-foreground;
   }
 }
+
+html,
+body {
+    overscroll-behavior-y: none;
+    overflow-x: hidden;
+    position: relative;
+}

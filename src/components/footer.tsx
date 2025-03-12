@@ -9,7 +9,6 @@ export default function Footer() {
         "bg-gradient-to-b from-black/80 to-purple-900/20"
       )}
     >
-      {/* Background gradient effects - matching the main application */}
       <div className="absolute inset-0 -z-10">
         <div className="absolute top-0 left-1/4 w-96 h-96 bg-purple-600/20 rounded-full blur-[100px]" />
         <div className="absolute bottom-0 right-1/4 w-72 h-72 bg-blue-600/20 rounded-full blur-[100px]" />
