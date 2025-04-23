@@ -65,7 +65,6 @@ export default function Footer() {
       <div className="flex flex-col md:flex-row items-center justify-around gap-8 text-gray-300 text-sm">
         <a
           href="https://infotech.osut.org/"
-          className="hover:opacity-80 transition-opacity backdrop-blur-sm"
         >
           <img
             src="src/assets/images/infotech.png"

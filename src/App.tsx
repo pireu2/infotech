@@ -11,19 +11,108 @@ import SponsorsDisplay from "./components/sponsors-display";
 import EventTabs, { EventType, ActiveTab } from "./components/event-tabs";
 import EventDialog from "./components/event-dialog";
 
+type Language = "en" | "ro";
 
+const translations = {
+  en: {
+    about: {
+      title: "About Us",
+      paragraphs: [
+        "Welcome to InfoTech, your gateway to career growth and practical learning in the engineering world! Powered by OSUT Cluj (Organizația Studenților din Universitatea Tehnică), InfoTech is dedicated to empowering students at UTCN with the knowledge, skills, and connections needed to thrive in the IT industry.",
+        "At InfoTech, we create a supportive and engaging environment for students, with hands-on activities, career-oriented training sessions, and events like ContestNight, InfoNight, and Open Days at top companies.",
+        "Whether you're here to build technical skills, grow your network, or just explore what's possible, InfoTech is here to support you every step of the way. Join us and take the next step toward achieving your career aspirations!",
+      ],
+    },
+    hero: {
+      badge: "A new phase, a new opportunity",
+      tagline: "Let's build your future together!",
+    },
+    events: {
+      title: "Events",
+      tabs: {
+        infonight: "InfoNight",
+        infoweek: "InfoWeek",
+        trainings: "Trainings",
+        contest: "ContestNight",
+      },
+    },
+    team: {
+      title: "Our Team",
+    },
+    sponsors: {
+      title: "Sponsors",
+    },
+    navigation: {
+      home: "Home",
+      about: "About Us",
+      events: "Events",
+      team: "Our Team",
+      sponsors: "Sponsors",
+    },
+    buttons: {
+      language: "Română",
+    },
+  },
+  ro: {
+    about: {
+      title: "Despre Noi",
+      paragraphs: [
+        "Bine ai venit la InfoTech, poarta ta către dezvoltare profesională și învățare practică în lumea ingineriei! Susținut de OSUT Cluj (Organizația Studenților din Universitatea Tehnică), InfoTech este dedicat sprijinirii studenților de la UTCN prin oferirea cunoștințelor, abilităților și conexiunilor necesare pentru a reuși în industria IT.",
+        "La InfoTech, creăm un mediu de susținere și implicare pentru studenți, prin activități practice, sesiuni de formare orientate spre carieră și evenimente precum ContestNight, InfoNight și Open Days la companii de top.",
+        "Fie că ești aici pentru a-ți dezvolta abilitățile tehnice, pentru a-ți extinde rețeaua de contacte sau doar pentru a explora noi posibilități, InfoTech este alături de tine la fiecare pas. Alătură-te nouă și fă următorul pas spre atingerea aspirațiilor tale profesionale!",
+      ],
+    },
+    hero: {
+      badge: "O nouă etapă, o nouă oportunitate",
+      tagline: "Să construim viitorul împreună!",
+    },
+    events: {
+      title: "Evenimente",
+      tabs: {
+        infonight: "InfoNight",
+        infoweek: "InfoWeek",
+        trainings: "Training-uri",
+        contest: "ContestNight",
+      },
+    },
+    team: {
+      title: "Echipa Noastră",
+    },
+    sponsors: {
+      title: "Sponsori",
+    },
+    navigation: {
+      home: "Acasă",
+      about: "Despre Noi",
+      events: "Evenimente",
+      team: "Echipa Noastră",
+      sponsors: "Sponsori",
+    },
+    buttons: {
+      language: "English",
+    },
+  },
+};
 
 const HomePage: React.FC = () => {
   const [activeTab, setActiveTab] = useState<ActiveTab>("infonight");
   const [selectedEvent, setSelectedEvent] = useState<EventType | null>(null);
   const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
 
+  const [language, setLanguage] = useState<Language>("en");
+
+  const toggleLanguage = () => {
+    setLanguage(language === "en" ? "ro" : "en");
+  };
+
+  const t = translations[language];
+
+
   const TabNames: Record<ActiveTab, string> = {
-    infonight: "InfoNight",
-    infoweek: "InfoWeek",
-    trainings: "Trainings",
-    contest: "Contest Night",
-    opendays: "OpenDays",
+    infonight: t.events.tabs.infonight,
+    infoweek: t.events.tabs.infoweek,
+    trainings: t.events.tabs.trainings,
+    contest: t.events.tabs.contest,
   };
 
   const handleEventSelect = (event: EventType) => {
@@ -32,11 +121,11 @@ const HomePage: React.FC = () => {
   };
 
   const sections = [
-    { id: "hero", label: "Home" },
-    { id: "about", label: "About Us" },
-    { id: "events", label: "Events" },
-    { id: "team", label: "Our Team" },
-    { id: "sponsors", label: "Sponsors" },
+    { id: "hero", label: t.navigation.home },
+    { id: "about", label: t.navigation.about },
+    { id: "events", label: t.navigation.events },
+    { id: "team", label: t.navigation.team },
+    { id: "sponsors", label: t.navigation.sponsors },
   ];
 
   return (
@@ -63,18 +152,28 @@ const HomePage: React.FC = () => {
       </div>
 
       {/* Sidebar */}
-      <Sidebar sections={sections} />
+      <Sidebar sections={sections} language={language} />
 
       {/* Hero Section */}
-      <Hero />
+      <Hero content={t.hero} />
+
+      <div className="fixed top-4 right-4 z-[500] text-center">
+        <Button
+          onClick={toggleLanguage}
+          variant="outline"
+          className="mb-8 py-2 px-4 bg-purple-500/10 border-purple-500/50 text-purple-300 backdrop-blur-sm shadow-lg shadow-purple-500/20"
+        >
+          {t.buttons.language}
+        </Button>
+      </div>
 
       {/* About Section */}
-      <About />
+      <About content={t.about} />
 
       {/* Events Section */}
       <section id="events" className="py-20 px-4 md:px-8 relative z-10">
         <h2 className="text-4xl font-bold text-center mb-12 bg-gradient-to-r from-purple-400 to-blue-300 bg-clip-text text-transparent">
-          Events
+          {t.events.title}
         </h2>
 
         <div className="flex flex-wrap justify-center gap-4 mb-12">
@@ -114,6 +213,7 @@ const HomePage: React.FC = () => {
               <EventTabs
                 activeTab={activeTab}
                 onEventSelect={handleEventSelect}
+                language={language}
               />
             </motion.div>
           </AnimatePresence>
@@ -121,10 +221,10 @@ const HomePage: React.FC = () => {
       </section>
 
       {/* Team Section */}
-      <TeamMemberCards />
+      <TeamMemberCards title={t.team.title} />
 
       {/* Sponsors Section */}
-      <SponsorsDisplay />
+      <SponsorsDisplay title={t.sponsors.title} />
 
       {/* Event Modal */}
       <EventDialog

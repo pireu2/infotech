@@ -13,7 +13,7 @@ import { motion } from "framer-motion";
    "src/assets/sponsors/ulma.png",
  ];
 
-export default function SponsorsDisplay() {
+export default function SponsorsDisplay( {title} : { title: string }) {
   return (
     <section
       id="sponsors"
@@ -24,7 +24,7 @@ export default function SponsorsDisplay() {
 
         <div className="relative p-8">
           <h2 className="text-4xl font-bold text-center mb-12 bg-gradient-to-r from-purple-400 to-blue-300 bg-clip-text text-transparent">
-            Sponsors
+            {title}
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
             {sponsors.map((src, i) => (

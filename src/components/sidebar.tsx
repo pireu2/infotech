@@ -10,7 +10,7 @@ interface SidebarProps {
   }[];
 }
 
-export default function Sidebar({ sections }: SidebarProps) {
+export default function Sidebar({ sections, language }: SidebarProps & { language: string }) {
   const [isOpen, setIsOpen] = React.useState(false);
 
   const scrollToSection = (id: string) => {
@@ -21,9 +21,10 @@ export default function Sidebar({ sections }: SidebarProps) {
     }
   };
 
+  const galleryText = language === "ro" ? "Galerie" : "Gallery";
+
   return (
     <>
-      {/* Sidebar toggle button - changed to sticky positioning */}
       <div className="fixed top-4 left-4 z-[500]">
         <Button
           variant="ghost"
@@ -35,7 +36,6 @@ export default function Sidebar({ sections }: SidebarProps) {
         </Button>
       </div>
 
-      {/* Sidebar */}
       <div
         className={cn(
           "fixed top-0 left-0 z-[400] h-full w-64 bg-[#0c0d1d]/90 backdrop-blur-lg border-r border-purple-800/30 transform transition-transform duration-300 ease-in-out",
@@ -70,21 +70,20 @@ export default function Sidebar({ sections }: SidebarProps) {
                     "https://osutcluj.pixieset.com/?t=infotech")
                 }
               >
-                Gallery
+                {galleryText}
               </Button>
             </div>
           </div>
 
           <div className="mt-auto">
             <div className="text-sm text-gray-500">
-              <p>© 2024 InfoTech</p>
+              <p>© 2025 InfoTech</p>
               <p>Powered by OSUT Cluj</p>
             </div>
           </div>
         </div>
       </div>
 
-      {/* Overlay when sidebar is open on mobile */}
       {isOpen && (
         <div
           className="fixed inset-0 bg-black/50 z-300 md:hidden"

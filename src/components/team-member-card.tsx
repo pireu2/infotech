@@ -67,16 +67,23 @@ interface TeamMember {
     },
   ];
 
-export default function TeamMemberCards() {
+export default function TeamMemberCards({ title }: { title: string }) {
   return (
     <div id="team" className="container py-12 mx-auto pl-3 pr-3 z-3">
-      <h2 className="text-4xl font-bold text-center mb-12 bg-gradient-to-r from-purple-400 to-blue-300 bg-clip-text text-transparent">
-        Our Team
-      </h2>
+      <div className="relative">
+        <h2 className="text-4xl font-bold text-center mb-12 bg-gradient-to-r from-purple-400 to-blue-300 bg-clip-text text-transparent">
+          {title}
+        </h2>
+      </div>
       <div className="flex justify-center">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 max-w-6xl">
+        <div className="flex flex-wrap justify-center max-w-6xl gap-10">
           {teamMembers.map((member) => (
-            <TeamMemberCard key={member.name} member={member} />
+            <div
+              key={member.name}
+              className="w-full sm:w-[calc(50%-20px)] lg:w-[calc(33.333%-27px)]"
+            >
+              <TeamMemberCard member={member} />
+            </div>
           ))}
         </div>
       </div>
@@ -90,7 +97,7 @@ function TeamMemberCard({ member }: { member: TeamMember }) {
   return (
     <Card
       className={cn(
-        "relative overflow-hidden bg-gray-900/40 backdrop-blur-xl border-0 rounded-xl transition-all duration-300 p-0",
+        "relative overflow-hidden bg-gray-900/40 backdrop-blur-xl border-0 rounded-xl transition-all duration-300 p-0 gap-0",
         "before:absolute before:inset-0 before:rounded-xl before:p-[1px] before:bg-gradient-to-b before:from-purple-500/40 before:to-transparent before:pointer-events-none",
         "after:absolute after:inset-0 after:rounded-xl after:p-[1px] after:bg-gradient-to-t after:from-purple-600/20 after:to-transparent after:pointer-events-none",
         "shadow-[0_8px_30px_rgba(0,0,0,0.3)] hover:shadow-[0_8px_30px_rgba(147,51,234,0.2)]",
@@ -110,7 +117,7 @@ function TeamMemberCard({ member }: { member: TeamMember }) {
           alt={member.name}
         />
       </div>
-      <CardHeader className="relative z-20 backdrop-blur-md pb-5">
+      <CardHeader className="relative z-20 backdrop-blur-md pb-5 pt-5">
         <CardTitle className="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-purple-300">
           {member.name}
         </CardTitle>
