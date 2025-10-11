@@ -167,6 +167,7 @@ const HomePage: React.FC = () => {
       </div>
 
       <p>un paragreaf</p>
+      <h2>da</h2>
 
       {/* About Section */}
       <About content={t.about} />
