@@ -107,7 +107,6 @@ const HomePage: React.FC = () => {
 
   const t = translations[language];
 
-
   const TabNames: Record<ActiveTab, string> = {
     infonight: t.events.tabs.infonight,
     infoweek: t.events.tabs.infoweek,
@@ -166,6 +165,8 @@ const HomePage: React.FC = () => {
           {t.buttons.language}
         </Button>
       </div>
+
+      <p>un paragreaf</p>
 
       {/* About Section */}
       <About content={t.about} />
