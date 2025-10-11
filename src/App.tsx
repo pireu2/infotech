@@ -166,6 +166,7 @@ const HomePage: React.FC = () => {
         </Button>
       </div>
 
+      <h2>nu</h2>
       <p>un paragreaf</p>
 
       {/* About Section */}
