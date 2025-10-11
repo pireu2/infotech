@@ -166,7 +166,7 @@ const HomePage: React.FC = () => {
         </Button>
       </div>
 
-      <h2>ZOP</h2>
+      <h2>ZAP</h2>
       <p>un paragreaf</p>
       <h2>da</h2>
 
