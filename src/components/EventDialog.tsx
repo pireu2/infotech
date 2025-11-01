@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { EventType } from "./event-tabs";
+import { EventType } from "./EventTabs";
 import { Dialog, DialogContent } from "./ui/dialog";
 import { Button } from "./ui/button";
 import { CalendarDays, MapPin, Users, X } from "lucide-react";
