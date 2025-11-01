@@ -2,14 +2,14 @@ import type React from "react";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Button } from "./components/ui/button";
-import Hero from "./components/hero";
-import About from "./components/about";
-import Footer from "./components/footer";
-import Sidebar from "./components/sidebar";
-import TeamMemberCards from "./components/team-member-card";
-import SponsorsDisplay from "./components/sponsors-display";
-import EventTabs, { EventType, ActiveTab } from "./components/event-tabs";
-import EventDialog from "./components/event-dialog";
+import Hero from "./components/Hero";
+import About from "./components/About";
+import Footer from "./components/Footer";
+import Sidebar from "./components/Sidebar";
+import TeamMemberCards from "./components/Te4amMemberCards";
+import SponsorsDisplay from "./components/SponsorsDisplay";
+import EventTabs, { EventType, ActiveTab } from "./components/EventTabs";
+import EventDialog from "./components/EventDialog";
 
 type Language = "en" | "ro";
 
