@@ -6,7 +6,7 @@ import Hero from "./components/Hero";
 import About from "./components/About";
 import Footer from "./components/Footer";
 import Sidebar from "./components/Sidebar";
-import TeamMemberCards from "./components/Te4amMemberCards";
+import TeamMemberCards from "./components/TeamMemberCards";
 import SponsorsDisplay from "./components/SponsorsDisplay";
 import EventTabs, { EventType, ActiveTab } from "./components/EventTabs";
 import EventDialog from "./components/EventDialog";
