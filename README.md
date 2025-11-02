@@ -135,6 +135,13 @@ npm run preview
 npm run lint
 ```
 
+### Deployment to github pages
+
+```bash
+git remote set-url origin <github pages link>
+npm run deploy -- -m "<deployment message>"
+```
+
 ## 🌍 Internationalization
 
 The website supports two languages:
