@@ -1,4 +1,4 @@
-# InfoTech UTCN
+# InfoTech OSUT
 
 A modern, responsive website for InfoTech - the IT organization of UTCN (Technical University of Cluj-Napoca). Built with React, TypeScript, and cutting-edge web technologies.
 
