@@ -6,7 +6,7 @@ const ContestTab: React.FC = () => {
 
   return (
     <div className="max-w-6xl mx-auto text-gray-300 text-lg space-y-8">
-      <h2 className="text-3xl font-semibold text-center bg-gradient-to-r from-purple-400 to-blue-300 bg-clip-text text-transparent ">
+      <h2 className="text-3xl font-semibold text-center bg-gradient-to-r from-purple-400 to-blue-300 bg-clip-text text-transparent font-display">
         {t.contest.title}
       </h2>
 
