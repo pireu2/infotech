@@ -145,6 +145,14 @@
         "readMore": "Read More",
         "showLess": "Show Less"
       }
+    },
+    "roles": {
+      "BC Responsible": "BC Responsible",
+      "Coordinator": "Coordinator",
+      "PR Responsible": "PR Responsible",
+      "Tehnic Responsible": "Tehnic Responsible",
+      "Co-coordinator": "Co-coordinator",
+      "Secretary": "Secretary"
     }
   },
   "ro": {
@@ -293,6 +301,14 @@
         "readMore": "Citește mai mult",
         "showLess": "Arată mai puțin"
       }
+    },
+    "roles": {
+      "BC Responsible": "Responsabil BC",
+      "Coordinator": "Coordonator",
+      "PR Responsible": "Responsabil PR",
+      "Tehnic Responsible": "Responsabil Tehnic",
+      "Co-coordinator": "Co-coordonator",
+      "Secretary": "Secretar"
     }
   }
 }

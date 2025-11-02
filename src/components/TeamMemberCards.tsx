@@ -41,6 +41,7 @@ export default function TeamMemberCards() {
 
 function TeamMemberCard({ member }: { member: TeamMember }) {
   const [isHovered, setIsHovered] = useState(false);
+  const { translations } = useTranslation();
 
   return (
     <Card
@@ -65,20 +66,19 @@ function TeamMemberCard({ member }: { member: TeamMember }) {
           alt={member.name}
         />
       </div>
-      <CardHeader className="relative z-20 backdrop-blur-md pb-5 pt-5">
-        <CardTitle className="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-purple-300">
+      <CardHeader className="relative z-20 backdrop-blur-md pb-3 pt-2 px-3">
+        <CardTitle className="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-purple-300 flex flex-row items-center justify-between">
           {member.name}
+          <a
+            href={`mailto:${member.email}`}
+            className="inline-flex items-center text-purple-400 hover:text-purple-300 transition-colors"
+          >
+            <Mail className="w-5 h-5" />
+          </a>
         </CardTitle>
         <CardDescription className="text-gray-300 font-medium">
-          {member.role}
+          <div> {translations.roles[member.role]}</div>
         </CardDescription>
-        <a
-          href={`mailto:${member.email}`}
-          className="inline-flex items-center mt-2 text-purple-400 hover:text-purple-300 transition-colors"
-        >
-          <Mail className="w-4 h-4 mr-2" />
-          Contact
-        </a>
       </CardHeader>
       <div className="absolute inset-0 rounded-xl ring-1 ring-inset ring-purple-500/20 pointer-events-none" />
       {isHovered && (
