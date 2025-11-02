@@ -53,7 +53,6 @@ export default function Hero() {
         >
           {t.hero.badge}
         </Badge>
-        test
         <div className="relative w-full h-[600px] md:h-[800px] rounded-3xl overflow-hidden border-1 border-white/20 ">
           <img
             src="/images/background.jpg"
