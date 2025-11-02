@@ -20,7 +20,12 @@ export default function Footer() {
             href="https://www.utcluj.ro/"
             className="hover:opacity-80 transition-opacity"
           >
-            <img src="/images/logo/utalb.png" alt="Logo" className="max-w-24" />
+            <img
+              src="/images/logo/utalb.png"
+              alt="Logo"
+              className="max-w-24"
+              loading="lazy"
+            />
           </a>
           <a
             href="https://osut.org/"
@@ -30,6 +35,7 @@ export default function Footer() {
               src="/images/logo/osutalb.png"
               alt="Logo"
               className="max-w-24"
+              loading="lazy"
             />
           </a>
           <a href="https://infotech.osut.org/">
@@ -37,6 +43,7 @@ export default function Footer() {
               src="/images/logo/infotech.png"
               alt="Logo"
               className="max-w-24"
+              loading="lazy"
             />
           </a>
         </div>

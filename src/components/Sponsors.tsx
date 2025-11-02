@@ -43,6 +43,7 @@ export default function Sponsors() {
                   src={src}
                   className="max-h-20 max-w-full w-auto h-auto object-contain opacity-80 p-2 group-hover:opacity-100 transition-all filter group-hover:brightness-110"
                   alt={`Sponsor ${i + 1}`}
+                  loading="lazy"
                   initial={{ opacity: 0, y: 10 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.8 }}

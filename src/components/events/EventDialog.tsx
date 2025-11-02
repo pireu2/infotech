@@ -65,6 +65,7 @@ export default function EventDialog({
                 src={event.image}
                 alt={event.title}
                 className="w-full h-full object-cover opacity-60"
+                loading="lazy"
               />
             )}
           </div>

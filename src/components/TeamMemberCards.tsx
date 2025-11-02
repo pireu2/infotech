@@ -78,6 +78,7 @@ function TeamMemberCard({ member }: { member: TeamMember }) {
           src={member.image || "/placeholder.svg"}
           className="block w-full h-100 object-cover rounded-t-xl"
           alt={member.name}
+          loading="lazy"
         />
       </div>
       <CardHeader className="relative z-20 backdrop-blur-md pb-3 pt-2 px-3">

@@ -44,6 +44,7 @@ const TrainingsTab: React.FC = () => {
                 src={event.image}
                 alt={event.title}
                 className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 ease-out"
+                loading="lazy"
               />
 
               <div className="absolute inset-0 bg-gradient-to-t from-gray-900/75 via-gray-900/50 to-gray-900/00" />
