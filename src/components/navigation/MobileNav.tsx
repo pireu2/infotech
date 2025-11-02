@@ -21,7 +21,6 @@ export default function MobileNav({
 }: MobileNavProps) {
   return (
     <>
-      {/* Mobile Navigation Button */}
       <div className="fixed top-4 left-4 z-[500] text-center md:hidden">
         <Button
           onClick={() => setIsOpen(!isOpen)}
@@ -32,7 +31,6 @@ export default function MobileNav({
         </Button>
       </div>
 
-      {/* Mobile Language Toggle Button */}
       <div className="fixed top-4 right-4 z-[500] text-center md:hidden">
         <Button
           onClick={toggleLanguage}
@@ -43,7 +41,6 @@ export default function MobileNav({
         </Button>
       </div>
 
-      {/* Mobile Sidebar */}
       <div
         className={cn(
           "fixed top-0 left-0 z-[400] h-full w-64 bg-[#0c0d1d]/70 backdrop-blur-xl border-r border-white/5 shadow-2xl shadow-black/60 transform transition-transform duration-300 ease-in-out md:hidden",
@@ -53,7 +50,7 @@ export default function MobileNav({
         <div className="flex flex-col justify-between h-screen pb-6 pt-18">
           <div className="mb-8">
             <img
-              src="src/assets/images/infotech.png"
+              src="/images/logo/infotech.png"
               alt="InfoTech Logo"
               className="h-16 w-auto drop-shadow-lg mb-4"
             />
@@ -90,7 +87,6 @@ export default function MobileNav({
         </div>
       </div>
 
-      {/* Mobile Overlay */}
       {isOpen && (
         <div
           className="fixed inset-0 bg-black/50 z-300 md:hidden"

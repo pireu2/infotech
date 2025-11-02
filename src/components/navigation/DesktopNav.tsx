@@ -18,7 +18,7 @@ export default function DesktopNav({
       <div className="flex items-center justify-between w-full px-6 py-1">
         <div className="flex items-center space-x-8">
           <img
-            src="src/assets/images/infotech.png"
+            src="/images/logo/infotech.png"
             alt="InfoTech Logo"
             className="h-16 w-auto drop-shadow-lg"
           />

@@ -56,7 +56,7 @@ export default function Hero() {
 
         <div className="relative w-full h-[600px] md:h-[800px] rounded-3xl overflow-hidden border-1 border-white/20 ">
           <img
-            src="/src/assets/images/background.jpg"
+            src="/images/background.jpg"
             alt={t.hero.imageAlt}
             className="w-full h-full object-cover "
           />

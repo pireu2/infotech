@@ -20,25 +20,21 @@ export default function Footer() {
             href="https://www.utcluj.ro/"
             className="hover:opacity-80 transition-opacity"
           >
-            <img
-              src="src/assets/images/utalb.png"
-              alt="Logo"
-              className="max-w-24"
-            />
+            <img src="/images/logo/utalb.png" alt="Logo" className="max-w-24" />
           </a>
           <a
             href="https://osut.org/"
             className="hover:opacity-80 transition-opacity"
           >
             <img
-              src="src/assets/images/osutalb.png"
+              src="/images/logo/osutalb.png"
               alt="Logo"
               className="max-w-24"
             />
           </a>
           <a href="https://infotech.osut.org/">
             <img
-              src="src/assets/images/infotech.png"
+              src="/images/logo/infotech.png"
               alt="Logo"
               className="max-w-24"
             />

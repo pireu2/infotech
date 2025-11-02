@@ -2,43 +2,43 @@
   {
     "name": "Ciotea Alexandra",
     "role": "BC Responsible",
-    "image": "src/assets/echipa/lexa.jpg",
+    "image": "images/echipa/lexa.jpg",
     "email": "lexaciotea@gmail.com"
   },
   {
     "name": "Murariu Georgiana",
     "role": "Coordinator",
-    "image": "src/assets/echipa/georgiana.jpg",
+    "image": "images/echipa/georgiana.jpg",
     "email": "georgiamurariu@gmail.com"
   },
   {
     "name": "Pavel Luca",
     "role": "Secretary",
-    "image": "src/assets/echipa/luca.jpg",
+    "image": "images/echipa/luca.jpg",
     "email": "lucapavel25@gmail.com"
   },
   {
     "name": "Duică Sebastian",
     "role": "Co-coordinator",
-    "image": "src/assets/echipa/sebi.jpg",
+    "image": "images/echipa/sebi.jpg",
     "email": "sebi.duica@gmail.com"
   },
   {
     "name": "Galis Bogdan",
     "role": "Co-coordinator",
-    "image": "src/assets/echipa/galis.jpg",
+    "image": "images/echipa/galis.jpg",
     "email": "6decembrie2017@gmail.com"
   },
   {
     "name": "Stan Giulia",
     "role": "Co-coordinator",
-    "image": "src/assets/echipa/giulia.jpg",
+    "image": "images/echipa/giulia.jpg",
     "email": "algistop47@gmail.com"
   },
   {
     "name": "Zinici Diana",
     "role": "Co-coordinator",
-    "image": "src/assets/echipa/diana.jpg",
+    "image": "images/echipa/diana.jpg",
     "email": "dianazinici2005@gmail.com"
   }
 ]

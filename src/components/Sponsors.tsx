@@ -4,15 +4,15 @@ import { useTranslation } from "../hooks/useTranslation";
 export default function Sponsors() {
   const { translations } = useTranslation();
   const sponsors: string[] = [
-    "src/assets/sponsors/bsides.svg",
-    "src/assets/sponsors/msg.svg",
-    "src/assets/sponsors/yardi.svg",
-    "src/assets/sponsors/finshape.png",
-    "src/assets/sponsors/irsap.png",
-    "src/assets/sponsors/kesz.png",
-    "src/assets/sponsors/mindit.png",
-    "src/assets/sponsors/synopsys.png",
-    "src/assets/sponsors/ulma.png",
+    "images/sponsors/bsides.svg",
+    "images/sponsors/msg.svg",
+    "images/sponsors/yardi.svg",
+    "images/sponsors/finshape.png",
+    "images/sponsors/irsap.png",
+    "images/sponsors/kesz.png",
+    "images/sponsors/mindit.png",
+    "images/sponsors/synopsys.png",
+    "images/sponsors/ulma.png",
   ];
 
   return (
