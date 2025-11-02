@@ -9,8 +9,38 @@
       ]
     },
     "hero": {
+      "title": "InfoTech: Empowering Future Tech Leaders",
       "badge": "A new phase, a new opportunity",
-      "tagline": "Let's build your future together!"
+      "tagline": "Join us to build practical skills, connect with industry professionals, and launch your successful career in technology through hands-on training and networking opportunities.",
+      "cards": {
+        "careerReady": {
+          "line1": "Career ready",
+          "line2": "Let's get you hired",
+          "line3": "Stand out"
+        },
+        "nextEvent": {
+          "title": "Next Event",
+          "eventName": "Training Internship 101",
+          "date": "November 27, 2025",
+          "countdown": {
+            "days": "Days",
+            "hours": "Hours",
+            "minutes": "Min",
+            "seconds": "Sec"
+          }
+        },
+        "activeMembers": {
+          "title": "Active Members",
+          "count": "100+"
+        },
+        "projectsCompleted": {
+          "count": "50+",
+          "title": "Projects Completed",
+          "subtitle": "Tech Innovations"
+        }
+      },
+      "button": "Learn More →",
+      "imageAlt": "InfoTech Background"
     },
     "events": {
       "title": "Events",
@@ -25,7 +55,8 @@
       "title": "Meet our team"
     },
     "sponsors": {
-      "title": "Sponsors"
+      "title": "Sponsors",
+      "subtitle": "We are deeply grateful to our sponsors for their unwavering support and partnership in creating opportunities for students."
     },
     "navigation": {
       "home": "Home",
@@ -165,8 +196,38 @@
       ]
     },
     "hero": {
+      "title": "InfoTech: Formarea Viitorilor Lideri în Tehnologie",
       "badge": "O nouă etapă, o nouă oportunitate",
-      "tagline": "Să construim viitorul împreună!"
+      "tagline": "Alătură-te nouă pentru a dezvolta abilități practice, a te conecta cu profesioniști din industrie și a-ți lansa cariera de succes în tehnologie prin training-uri practice și oportunități de networking.",
+      "cards": {
+        "careerReady": {
+          "line1": "Carieră pregătită",
+          "line2": "Să te angajăm",
+          "line3": "Ieși în evidență"
+        },
+        "nextEvent": {
+          "title": "Următorul Eveniment",
+          "eventName": "Training Internship 101",
+          "date": "27 noiembrie 2025",
+          "countdown": {
+            "days": "Zile",
+            "hours": "Ore",
+            "minutes": "Min",
+            "seconds": "Sec"
+          }
+        },
+        "activeMembers": {
+          "title": "Membri Activi",
+          "count": "100+"
+        },
+        "projectsCompleted": {
+          "count": "50+",
+          "title": "Proiecte Finalizate",
+          "subtitle": "Inovații Tehnologice"
+        }
+      },
+      "button": "Află mai mult →",
+      "imageAlt": "Fundal InfoTech"
     },
     "events": {
       "title": "Evenimente",
@@ -181,7 +242,8 @@
       "title": "Echipa Noastră"
     },
     "sponsors": {
-      "title": "Sponsori"
+      "title": "Sponsori",
+      "subtitle": "Suntem profund recunoscători sponsorilor noștri pentru sprijinul lor neclintit și parteneriatul în crearea de oportunități pentru studenți."
     },
     "navigation": {
       "home": "Acasă",

@@ -55,7 +55,7 @@ const TrainingsTab: React.FC = () => {
 
             <div className="absolute bottom-0 left-0 right-0 p-5 z-30">
               <div className="space-y-2">
-                <h3 className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-300 to-blue-300 drop-shadow-sm">
+                <h3 className="text-2xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-300 to-blue-300 drop-shadow-sm font-display">
                   {event.title}
                 </h3>
 

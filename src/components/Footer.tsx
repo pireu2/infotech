@@ -5,8 +5,7 @@ export default function Footer() {
   return (
     <footer
       className={cn(
-        "relative overflow-hidden backdrop-blur-xl border-t border-purple-500/20 text-white py-10 font-sans",
-        "bg-gradient-to-b from-black/80 to-purple-900/20"
+        "relative overflow-hidden bg-[#0c0d1d]/60 backdrop-blur-xl border-t border-white/5 shadow-2xl shadow-black/50 text-white py-10 font-sans"
       )}
     >
       <div className="absolute inset-0 -z-10">

@@ -19,20 +19,34 @@ export default function TeamMemberCards() {
   return (
     <div id="team" className="container py-12 mx-auto pl-3 pr-3 z-3">
       <div className="relative">
-        <h2 className="text-4xl font-bold text-center mb-12 bg-gradient-to-r from-purple-400 to-blue-300 bg-clip-text text-transparent">
+        <h2 className="text-4xl font-semibold text-center mb-12 bg-gradient-to-r from-purple-400 to-blue-300 bg-clip-text text-transparent font-display">
           {translations.team.title}
         </h2>
       </div>
       <div className="flex justify-center">
-        <div className="flex flex-wrap justify-center max-w-6xl gap-10">
-          {teamMembers.map((member) => (
-            <div
-              key={member.name}
-              className="w-full sm:w-[calc(50%-20px)] lg:w-[calc(33.333%-27px)]"
-            >
-              <TeamMemberCard member={member} />
-            </div>
-          ))}
+        <div className="max-w-7xl w-full">
+          {/* First row: 3 members */}
+          <div className="flex flex-wrap justify-center gap-10 mb-10">
+            {teamMembers.slice(0, 3).map((member) => (
+              <div
+                key={member.name}
+                className="w-full sm:w-[calc(50%-20px)] lg:w-[calc(25%-30px)]"
+              >
+                <TeamMemberCard member={member} />
+              </div>
+            ))}
+          </div>
+          {/* Second row: 4 members */}
+          <div className="flex flex-wrap justify-center gap-10">
+            {teamMembers.slice(3, 7).map((member) => (
+              <div
+                key={member.name}
+                className="w-full sm:w-[calc(50%-20px)] lg:w-[calc(25%-30px)]"
+              >
+                <TeamMemberCard member={member} />
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </div>

@@ -69,7 +69,7 @@ export default function EventDialog({
             )}
           </div>
 
-          <h2 className="pl-4 md:pl-6  pt-2 text-xl md:text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-300 to-blue-300 drop-shadow-lg ">
+          <h2 className="pl-4 md:pl-6  pt-2 text-xl md:text-2xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-300 to-blue-300 drop-shadow-lg font-display">
             {event.title}
           </h2>
 
