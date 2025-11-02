@@ -1,14 +1,10 @@
 import { Badge } from "./ui/badge";
 import { motion } from "framer-motion";
+import { useTranslation } from "../hooks/useTranslation";
 
-interface HeroProps {
-  content: {
-    badge: string;
-    tagline: string;
-  };
-}
+export default function Hero() {
+  const { translations: t } = useTranslation();
 
-export default function Hero({ content }: HeroProps) {
   return (
     <section
       id="hero"
@@ -31,17 +27,17 @@ export default function Hero({ content }: HeroProps) {
               className="relative z-10 animate-float mx-auto"
               alt="InfoTech Logo"
               initial={{ opacity: 0, y: 50 }}
-              animate={{ opacity: 1, y: 0 }}
+              animate={{ opacity: 0.8, y: 0 }}
               transition={{ duration: 0.8 }}
             />
             <Badge
               variant="outline"
               className="mb-8 py-2 px-4 bg-purple-500/10 border-purple-500/50 text-purple-300 backdrop-blur-sm shadow-lg shadow-purple-500/20"
             >
-              {content.badge}
+              {t.hero.badge}
             </Badge>
             <p className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto">
-              {content.tagline}
+              {t.hero.tagline}
             </p>
           </motion.div>
         </div>

@@ -1,19 +1,21 @@
 import { motion } from "framer-motion";
+import { useTranslation } from "../hooks/useTranslation";
 
+const sponsors: string[] = [
+  "src/assets/sponsors/bsides.svg",
+  "src/assets/sponsors/msg.svg",
+  "src/assets/sponsors/yardi.svg",
+  "src/assets/sponsors/finshape.png",
+  "src/assets/sponsors/irsap.png",
+  "src/assets/sponsors/kesz.png",
+  "src/assets/sponsors/mindit.png",
+  "src/assets/sponsors/synopsys.png",
+  "src/assets/sponsors/ulma.png",
+];
 
- const sponsors: string[] = [
-   "src/assets/sponsors/bsides.svg",
-   "src/assets/sponsors/msg.svg",
-   "src/assets/sponsors/yardi.svg",
-   "src/assets/sponsors/finshape.png",
-   "src/assets/sponsors/irsap.png",
-   "src/assets/sponsors/kesz.png",
-   "src/assets/sponsors/mindit.png",
-   "src/assets/sponsors/synopsys.png",
-   "src/assets/sponsors/ulma.png",
- ];
+export default function SponsorsDisplay() {
+  const { translations } = useTranslation();
 
-export default function SponsorsDisplay( {title} : { title: string }) {
   return (
     <section
       id="sponsors"
@@ -24,7 +26,7 @@ export default function SponsorsDisplay( {title} : { title: string }) {
 
         <div className="relative p-8">
           <h2 className="text-4xl font-bold text-center mb-12 bg-gradient-to-r from-purple-400 to-blue-300 bg-clip-text text-transparent">
-            {title}
+            {translations.sponsors.title}
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
             {sponsors.map((src, i) => (
@@ -55,5 +57,4 @@ export default function SponsorsDisplay( {title} : { title: string }) {
       </div>
     </section>
   );
-};
-
+}

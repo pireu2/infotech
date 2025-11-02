@@ -2,16 +2,19 @@ import * as React from "react";
 import { Menu, X } from "lucide-react";
 import { cn } from "../lib/utils";
 import { Button } from "./ui/button";
+import { useTranslation } from "../hooks/useTranslation";
 
-interface SidebarProps {
-  sections: {
-    id: string;
-    label: string;
-  }[];
-}
-
-export default function Sidebar({ sections, language }: SidebarProps & { language: string }) {
+export default function Sidebar() {
   const [isOpen, setIsOpen] = React.useState(false);
+  const { translations: t } = useTranslation();
+
+  const sections = [
+    { id: "hero", label: t.navigation.home },
+    { id: "about", label: t.navigation.about },
+    { id: "events", label: t.navigation.events },
+    { id: "team", label: t.navigation.team },
+    { id: "sponsors", label: t.navigation.sponsors },
+  ];
 
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
@@ -21,16 +24,13 @@ export default function Sidebar({ sections, language }: SidebarProps & { languag
     }
   };
 
-  const galleryText = language === "ro" ? "Galerie" : "Gallery";
-
   return (
     <>
-      <div className="fixed top-4 left-4 z-[500]">
+      <div className="fixed top-4 left-4 z-[500] text-center">
         <Button
-          variant="ghost"
-          size="icon"
-          className="bg-purple-900/50 backdrop-blur-md text-white hover:bg-purple-800/50"
           onClick={() => setIsOpen(!isOpen)}
+          variant="outline"
+          className="mb-8 py-2 px-4 bg-purple-500/10 border-purple-500/50 text-purple-300 backdrop-blur-sm shadow-lg shadow-purple-500/20"
         >
           {isOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
         </Button>
@@ -48,7 +48,7 @@ export default function Sidebar({ sections, language }: SidebarProps & { languag
           <div className="absolute top-1/2 left-10 w-32 h-32 bg-indigo-600/15 rounded-full blur-[50px]" />
         </div>
 
-        <div className="flex flex-col p-6 pt-20">
+        <div className="flex flex-col justify-between h-screen p-6 pt-20">
           <div className="mb-8">
             <h3 className="text-xl font-bold text-purple-400 mb-4">Infotech</h3>
             <div className="space-y-2">
@@ -70,7 +70,7 @@ export default function Sidebar({ sections, language }: SidebarProps & { languag
                     "https://osutcluj.pixieset.com/?t=infotech")
                 }
               >
-                {galleryText}
+                {t.navigation.gallery}
               </Button>
             </div>
           </div>

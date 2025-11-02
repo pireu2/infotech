@@ -1,0 +1,298 @@
+{
+  "en": {
+    "about": {
+      "title": "About Us",
+      "paragraphs": [
+        "Welcome to InfoTech, your gateway to career growth and practical learning in the engineering world! Powered by OSUT Cluj (Organizația Studenților din Universitatea Tehnică), InfoTech is dedicated to empowering students at UTCN with the knowledge, skills, and connections needed to thrive in the IT industry.",
+        "At InfoTech, we create a supportive and engaging environment for students, with hands-on activities, career-oriented training sessions, and events like ContestNight, InfoNight, and Open Days at top companies.",
+        "Whether you're here to build technical skills, grow your network, or just explore what's possible, InfoTech is here to support you every step of the way. Join us and take the next step toward achieving your career aspirations!"
+      ]
+    },
+    "hero": {
+      "badge": "A new phase, a new opportunity",
+      "tagline": "Let's build your future together!"
+    },
+    "events": {
+      "title": "Events",
+      "tabs": {
+        "infonight": "InfoNight",
+        "infoweek": "InfoWeek",
+        "trainings": "Trainings",
+        "contest": "ContestNight"
+      }
+    },
+    "team": {
+      "title": "Meet our team"
+    },
+    "sponsors": {
+      "title": "Sponsors"
+    },
+    "navigation": {
+      "home": "Home",
+      "about": "About Us",
+      "events": "Events",
+      "team": "Team",
+      "sponsors": "Sponsors",
+      "gallery": "Gallery"
+    },
+    "buttons": {
+      "language": "Română"
+    },
+    "trainings": {
+      "trainer": "Trainer:"
+    },
+    "eventDialog": {
+      "date": "Date",
+      "location": "Location",
+      "trainer": "Trainer",
+      "eventDescription": "Event Description",
+      "dialogDescription": "Detailed information about the {eventTitle} event including date, location, trainer, and description.",
+      "eventDetails": "Event Details"
+    },
+    "trainingEvents": {
+      "1": {
+        "title": "Financial Education",
+        "date": "4th of December",
+        "description": "Learn essential personal finance skills with Olimpia Pop. Master budgeting, expense management, and smart saving habits. Gain confidence in making informed financial decisions for long-term stability."
+      },
+      "2": {
+        "title": "Work-Life Balance",
+        "date": "25 & 28 November",
+        "description": "Discover strategies for healthier work-life balance with psychologist Denisa Nita. Learn to manage priorities, reduce stress, and overcome impostor syndrome. Build the skills needed for long-term well-being and career success."
+      },
+      "3": {
+        "title": "How to Interview",
+        "date": "November 21st, 20:00",
+        "description": "Master job interview skills with Cristina Gogozan. Learn preparation techniques, company research, and confident communication. Gain practical tools to make a strong impression and stand out in any interview."
+      },
+      "4": {
+        "title": "How to Start a Startup",
+        "date": "November 7th, 18:00",
+        "description": "Explore entrepreneurship fundamentals with Georgina Lupu. Learn to identify business ideas, create plans, and secure funding. Discover the challenges and mindset needed for startup success."
+      },
+      "5": {
+        "title": "How to CV",
+        "date": "October 30th, 18:00",
+        "description": "Create compelling CVs with Mariana Irimia. Learn to highlight skills, avoid common mistakes, and tailor content for different industries. Master the art of making your qualifications stand out to employers."
+      }
+    },
+    "contest": {
+      "title": "What to expect at ContestNight?",
+      "paragraphs": [
+        "<b>ContestNight</b> is not just an event; it's an experience crafted to empower students to unlock new opportunities and take charge of their future. Taking place on October 22 at HUB UTCN (street George Barițiu nr. 4-8), from 6 PM to 10 PM, this first edition of ContestNight brings together students, professionals, and organizations in one dynamic space.",
+        "Curious about how to boost your resume with real-world experience? Interested in testing your skills in national or international challenges? ContestNight has it all, with each stand showcasing different ways to develop yourself both personally and professionally. From cutting-edge engineering contests to chess games, you'll have the chance to talk directly to the people who can help you get involved, so you can find exactly what sparks your interest.",
+        "But it's not all business—there's something for everyone! Enjoy live artistic performances, soak in the energetic atmosphere, and take a break in our cozy chill zone, perfect for mingling or simply relaxing between explorations. Whether you're into tech, the arts, sports, or something in between, you'll find something to ignite your interest."
+      ],
+      "whyAttend": {
+        "title": "Why Should You Attend?",
+        "items": [
+          "<b>Networking:</b> Meet like-minded peers and connect with representatives from leading student organizations and competitions.",
+          "<b>Inspiration:</b> Get hands-on information about a wide range of student activities that can shape your future career.",
+          "<b>Entertainment:</b> From artistic performances to a welcoming chill zone, ContestNight blends opportunity with fun in a way that'll make you want to stay until the last minute."
+        ]
+      },
+      "conclusion": "Mark your calendars, tell your friends, and get ready to seize the endless opportunities that await at ContestNight. Join us, discover your next big adventure, and make your mark on campus and beyond!"
+    },
+    "infonight": {
+      "title": "What to expect at InfoNight?",
+      "summary": "Looking to kick-start your career? <strong>InfoNight</strong> is your chance to connect with top companies, meet industry professionals, and build valuable relationships that can shape your future. Whether you're searching for internships, full-time roles, or expert career advice, this event puts you face-to-face with recruiters eager to meet talented students like you. Plus, you'll get the opportunity to have your CV reviewed by specialists and gain insights that give you a competitive edge. Don't miss out—stay tuned for more details!",
+      "expandableContent": {
+        "paragraphs": [
+          "<strong>InfoNight</strong> is back for its third edition, offering you the opportunity to take the next step in your career journey! This event will take place on March 18th, from 16:00 to 22:00 at HUB UTCN (George Barițiu Street, nr. 4-8).",
+          "Whether you're just starting your university journey or preparing to enter the professional world, this is the perfect place to expand your network, gain valuable insights, and explore exciting career opportunities.",
+          "At InfoNight, you'll have the chance to meet recruiters and experts from some of the most prestigious companies in various industries. It's more than just a chance to hand over your CV—it's an opportunity to learn firsthand from those who are actively shaping the job market.",
+          "This is your chance to build connections with key industry leaders who can guide you toward the career path you've always dreamed of."
+        ],
+        "benefits": {
+          "title": "What's in it for you?",
+          "items": [
+            "<strong>Meet industry experts</strong> - Connect with representatives from top companies, explore job opportunities, and gain insights into your future career.",
+            "<strong>Get expert CV feedback</strong> - Receive personalized advice from recruiting specialists to make your CV stand out.",
+            "<strong>Expand your network</strong> - Build valuable connections with career mentors who can help you achieve your goals.",
+            "<strong>Unwind & win</strong> - Relax in our chill zone, and you might be one of the lucky winners of exciting prizes!"
+          ]
+        },
+        "conclusion": [
+          "This is more than just an event; it's a platform for growth and exploration. Join us and discover the countless opportunities that await you. Whether you're eager to land your first internship, seeking full-time positions, or just looking to gain career advice, InfoNight has something for everyone.",
+          "Don't miss the third edition of InfoNight on March 18th! Save the date, invite your friends, and get ready for an evening of inspiration, networking, and career development."
+        ]
+      },
+      "buttons": {
+        "readMore": "Read More",
+        "showLess": "Show Less"
+      }
+    },
+    "infoweek": {
+      "title": "What to expect at InfoWeek?",
+      "summary": "Ever wondered what it's like inside top companies? <strong>InfoWeek</strong> (March 24-28) gives you a sneak-peek at some of the most exciting workplaces in and around Cluj-Napoca! Step behind the scenes, meet industry pros, and explore career paths in real-world settings. Whether you're looking for inspiration, internships, or future job opportunities, this is your chance to see where your skills and ambitions could take you. Don't just imagine your dream job—experience it!",
+      "expandableContent": {
+        "paragraphs": [
+          "Curious about what it's like to work in your field of interest? <strong>InfoWeek</strong>, powered by InfoTech, offers you the chance to step inside multiple top companies in and around Cluj-Napoca between March 24-28. This is your opportunity to explore different workplaces, meet industry experts, and see firsthand what a future career could look like.",
+          "Throughout the week, participating companies will open their doors to students, offering guided tours, insights into their work environment, and direct interactions with professionals eager to share their experiences.",
+          "Whether you're looking for internships, job opportunities, or simply want to understand different career paths, InfoWeek is the perfect chance to expand your perspective."
+        ],
+        "benefits": {
+          "title": "Why join <strong>InfoWeek</strong>?",
+          "items": [
+            "<strong>Company insights</strong> - Experience different work environments and learn about various industries.",
+            "<strong>Career connections</strong> - Meet professionals and discover what skills and experiences employers value most.",
+            "<strong>A full week of opportunities</strong> - With seven companies hosting open days, there's plenty to explore!"
+          ]
+        },
+        "conclusion": "Take advantage of this chance to bridge the gap between university and the professional world. Stay tuned for more details and get ready to discover where your future could take you!"
+      },
+      "buttons": {
+        "readMore": "Read More",
+        "showLess": "Show Less"
+      }
+    }
+  },
+  "ro": {
+    "about": {
+      "title": "Despre Noi",
+      "paragraphs": [
+        "Bine ai venit la InfoTech, poarta ta către dezvoltare profesională și învățare practică în lumea ingineriei! Susținut de OSUT Cluj (Organizația Studenților din Universitatea Tehnică), InfoTech este dedicat sprijinirii studenților de la UTCN prin oferirea cunoștințelor, abilităților și conexiunilor necesare pentru a reuși în industria IT.",
+        "La InfoTech, creăm un mediu de susținere și implicare pentru studenți, prin activități practice, sesiuni de formare orientate spre carieră și evenimente precum ContestNight, InfoNight și Open Days la companii de top.",
+        "Fie că ești aici pentru a-ți dezvolta abilitățile tehnice, pentru a-ți extinde rețeaua de contacte sau doar pentru a explora noi posibilități, InfoTech este alături de tine la fiecare pas. Alătură-te nouă și fă următorul pas spre atingerea aspirațiilor tale profesionale!"
+      ]
+    },
+    "hero": {
+      "badge": "O nouă etapă, o nouă oportunitate",
+      "tagline": "Să construim viitorul împreună!"
+    },
+    "events": {
+      "title": "Evenimente",
+      "tabs": {
+        "infonight": "InfoNight",
+        "infoweek": "InfoWeek",
+        "trainings": "Training-uri",
+        "contest": "ContestNight"
+      }
+    },
+    "team": {
+      "title": "Echipa Noastră"
+    },
+    "sponsors": {
+      "title": "Sponsori"
+    },
+    "navigation": {
+      "home": "Acasă",
+      "about": "Despre Noi",
+      "events": "Evenimente",
+      "team": "Echipa",
+      "sponsors": "Sponsori",
+      "gallery": "Galerie"
+    },
+    "buttons": {
+      "language": "English"
+    },
+    "trainings": {
+      "trainer": "Trainer:"
+    },
+    "eventDialog": {
+      "date": "Data",
+      "location": "Locație",
+      "trainer": "Trainer",
+      "eventDescription": "Descriere Eveniment",
+      "dialogDescription": "Informații detaliate despre evenimentul {eventTitle} inclusiv dată, locație, trainer și descriere.",
+      "eventDetails": "Detalii Eveniment"
+    },
+    "trainingEvents": {
+      "1": {
+        "title": "Educație Financiară",
+        "date": "4 decembrie",
+        "description": "Învață abilități esențiale de finanțe personale cu Olimpia Pop. Stăpânește bugetarea, gestionarea cheltuielilor și obiceiurile inteligente de economisire. Câștigă încredere în luarea deciziilor financiare informate pentru stabilitate pe termen lung."
+      },
+      "2": {
+        "title": "Echilibrul Viață-Muncă",
+        "date": "25 și 28 noiembrie",
+        "description": "Descoperă strategii pentru un echilibru mai sănătos între viața profesională și cea personală cu psihologul Denisa Nita. Învață să gestionezi prioritățile, să reduci stresul și să depășești sindromul impostorului. Dezvoltă abilitățile necesare pentru bunăstarea și succesul profesional pe termen lung."
+      },
+      "3": {
+        "title": "Cum să Dai Interviuri",
+        "date": "21 noiembrie, 20:00",
+        "description": "Stăpânește abilitățile de interviu cu Cristina Gogozan. Învață tehnici de pregătire, cercetare a companiei și comunicare încrezătoare. Câștigă instrumente practice pentru a face o impresie puternică și pentru a ieși în evidență în orice interviu."
+      },
+      "4": {
+        "title": "Cum să Începi un Startup",
+        "date": "7 noiembrie, 18:00",
+        "description": "Explorează elementele fundamentale ale antreprenoriatului cu Georgina Lupu. Învață să identifici idei de afaceri, să creezi planuri și să obții finanțare. Descoperă provocările și mentalitatea necesară pentru succesul unui startup."
+      },
+      "5": {
+        "title": "Cum să Creezi un CV",
+        "date": "30 octombrie, 18:00",
+        "description": "Creează CV-uri convingătoare cu Mariana Irimia. Învață să evidențiezi abilitățile, să eviți greșelile comune și să adaptezi conținutul pentru diferite industrii. Stăpânește arta de a face calificările tale să iasă în evidență pentru angajatori."
+      }
+    },
+    "contest": {
+      "title": "La ce să te aștepți la ContestNight?",
+      "paragraphs": [
+        "<b>ContestNight</b> nu este doar un eveniment; este o experiență creată pentru a ajuta studenții să descopere noi oportunități și să-și ia viitorul în mâini. Având loc pe 22 octombrie la HUB UTCN (strada George Barițiu nr. 4-8), de la ora 18:00 până la 22:00, această primă ediție a ContestNight reunește studenți, profesioniști și organizații într-un spațiu dinamic.",
+        "Curios cum să-ți îmbunătățești CV-ul cu experiență practică? Interesat să-ți testezi abilitățile în competiții naționale sau internaționale? ContestNight le are pe toate, fiecare stand prezentând diferite modalități de a te dezvolta atât personal, cât și profesional. De la concursuri de inginerie de ultimă generație până la partide de șah, vei avea șansa să discuți direct cu persoanele care te pot ajuta să te implici, astfel încât să poți găsi exact ceea ce te interesează.",
+        "Dar nu e doar despre carieră - este ceva pentru toată lumea! Bucură-te de spectacole artistice live, absorbe atmosfera energică și fă o pauză în zona noastră confortabilă de relaxare, perfectă pentru socializare sau pur și simplu pentru a te relaxa între explorări. Fie că ești pasionat de tehnologie, arte, sport sau altceva, vei găsi ceva care să-ți aprindă interesul."
+      ],
+      "whyAttend": {
+        "title": "De ce să participi?",
+        "items": [
+          "<b>Networking:</b> Întâlnește colegi cu interese similare și conectează-te cu reprezentanți ai organizațiilor studențești și competițiilor de top.",
+          "<b>Inspirație:</b> Obține informații practice despre o gamă largă de activități studențești care îți pot modela viitoarea carieră.",
+          "<b>Divertisment:</b> De la spectacole artistice până la o zonă primitoare de relaxare, ContestNight îmbină oportunitatea cu distracția într-un mod care te va face să vrei să rămâi până în ultimul minut."
+        ]
+      },
+      "conclusion": "Marchează-ți calendarul, spune-le prietenilor tăi și pregătește-te să profiți de nenumăratele oportunități care te așteaptă la ContestNight. Alătură-te nouă, descoperă-ți următoarea mare aventură și lasă-ți amprenta atât în campus, cât și dincolo de el!"
+    },
+    "infonight": {
+      "title": "La ce să te aștepți la InfoNight?",
+      "summary": "Cauți să-ți începi cariera? <strong>InfoNight</strong> este șansa ta de a te conecta cu companii de top, de a întâlni profesioniști din industrie și de a construi relații valoroase care îți pot modela viitorul. Fie că ești în căutarea unui stagiu, a unui post permanent sau ai nevoie de sfaturi de carieră de la experți, acest eveniment te pune față în față cu recrutorii dornici să întâlnească studenți talentați ca tine. În plus, vei avea oportunitatea să-ți revizuiești CV-ul de către specialiști și să obții informații care îți oferă un avantaj competitiv. Nu rata—rămâi conectat pentru mai multe detalii!",
+      "expandableContent": {
+        "paragraphs": [
+          "<strong>InfoNight</strong> revine cu cea de-a treia ediție, oferindu-ți oportunitatea de a face următorul pas în călătoria ta profesională! Acest eveniment va avea loc pe 18 martie, între orele 16:00 și 22:00 la HUB UTCN (Strada George Barițiu, nr. 4-8).",
+          "Fie că ești la începutul călătoriei tale universitare sau te pregătești să intri în lumea profesională, acesta este locul perfect pentru a-ți extinde rețeaua de contacte, a obține informații valoroase și a explora oportunități interesante de carieră.",
+          "La InfoNight, vei avea șansa să întâlnești recrutori și experți de la unele dintre cele mai prestigioase companii din diverse industrii. Nu este doar o șansă de a-ți preda CV-ul—este o oportunitate de a învăța direct de la cei care modelează activ piața muncii.",
+          "Aceasta este șansa ta de a construi conexiuni cu lideri cheie din industrie care te pot ghida spre cariera la care ai visat întotdeauna."
+        ],
+        "benefits": {
+          "title": "Ce beneficii ai?",
+          "items": [
+            "<strong>Întâlnește experți din industrie</strong> - Conectează-te cu reprezentanți ai companiilor de top, explorează oportunități de angajare și obține informații despre viitoarea ta carieră.",
+            "<strong>Primește feedback expert pentru CV</strong> - Primește sfaturi personalizate de la specialiști în recrutare pentru a face CV-ul tău să iasă în evidență.",
+            "<strong>Extinde-ți rețeaua</strong> - Construiește conexiuni valoroase cu mentori de carieră care te pot ajuta să-ți atingi obiectivele.",
+            "<strong>Relaxare și câștiguri</strong> - Relaxează-te în zona noastră chill și ai putea fi unul dintre norocoșii câștigători ai unor premii interesante!"
+          ]
+        },
+        "conclusion": [
+          "Acesta nu este doar un eveniment; este o platformă pentru creștere și explorare. Alătură-te nouă și descoperă nenumăratele oportunități care te așteaptă. Fie că ești dornic să obții primul tău stagiu, cauți poziții permanente sau doar dorești să primești sfaturi de carieră, InfoNight are ceva pentru toată lumea.",
+          "Nu rata a treia ediție InfoNight pe 18 martie! Salvează data, invită-ți prietenii și pregătește-te pentru o seară de inspirație, networking și dezvoltare profesională."
+        ]
+      },
+      "buttons": {
+        "readMore": "Citește mai mult",
+        "showLess": "Arată mai puțin"
+      }
+    },
+    "infoweek": {
+      "title": "La ce să te aștepți la InfoWeek?",
+      "summary": "Te-ai întrebat vreodată cum este în interiorul companiilor de top? <strong>InfoWeek</strong> (24-28 martie) îți oferă o privire în unele dintre cele mai interesante locuri de muncă din Cluj-Napoca și împrejurimi! Pășește în culise, întâlnește profesioniști din industrie și explorează căi de carieră în medii reale. Fie că ești în căutare de inspirație, stagii sau oportunități viitoare de angajare, aceasta este șansa ta de a vedea unde te-ar putea duce abilitățile și ambițiile tale. Nu-ți imagina doar jobul de vis—experimentează-l!",
+      "expandableContent": {
+        "paragraphs": [
+          "Curios cum este să lucrezi în domeniul tău de interes? <strong>InfoWeek</strong>, organizat de InfoTech, îți oferă șansa să pășești în interiorul mai multor companii de top din Cluj-Napoca și împrejurimi între 24-28 martie. Aceasta este oportunitatea ta de a explora diferite locuri de muncă, de a întâlni experți din industrie și de a vedea la prima mână cum ar putea arăta o viitoare carieră.",
+          "Pe parcursul săptămânii, companiile participante își vor deschide ușile pentru studenți, oferind tururi ghidate, informații despre mediul lor de lucru și interacțiuni directe cu profesioniști dornici să-și împărtășească experiențele.",
+          "Fie că ești în căutarea unui stagiu, a unei oportunități de angajare sau pur și simplu dorești să înțelegi diferite căi de carieră, InfoWeek este șansa perfectă de a-ți extinde perspectiva."
+        ],
+        "benefits": {
+          "title": "De ce să participi la <strong>InfoWeek</strong>?",
+          "items": [
+            "<strong>Cunoașterea companiilor</strong> - Experimentează diferite medii de lucru și află despre diverse industrii.",
+            "<strong>Conexiuni profesionale</strong> - Întâlnește profesioniști și descoperă ce abilități și experiențe sunt cele mai valoroase pentru angajatori.",
+            "<strong>O săptămână întreagă de oportunități</strong> - Cu șapte companii care organizează zile deschise, ai o mulțime de lucruri de explorat!"
+          ]
+        },
+        "conclusion": "Profită de această șansă de a reduce distanța dintre universitate și lumea profesională. Rămâi conectat pentru mai multe detalii și pregătește-te să descoperi unde te-ar putea duce viitorul tău!"
+      },
+      "buttons": {
+        "readMore": "Citește mai mult",
+        "showLess": "Arată mai puțin"
+      }
+    }
+  }
+}
