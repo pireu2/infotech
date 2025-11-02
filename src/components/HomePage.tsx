@@ -5,18 +5,16 @@ import { Button } from "../components/ui/button";
 import Hero from "../components/Hero";
 import About from "../components/About";
 import Footer from "../components/Footer";
-import Sidebar from "../components/Sidebar";
+import Navbar from "../components/Navbar";
 import TeamMemberCards from "../components/TeamMemberCards";
 import SponsorsDisplay from "../components/SponsorsDisplay";
 import EventTabs from "../components/events/EventTabs";
 import { ActiveTab } from "../types/ActiveTab";
 import { useTranslation } from "../hooks/useTranslation";
-import { useLanguage } from "../contexts/LanguageContext";
 
 const HomePage: React.FC = () => {
   const [activeTab, setActiveTab] = useState<ActiveTab>("infonight");
 
-  const { toggleLanguage } = useLanguage();
   const { translations } = useTranslation();
 
   const TabNames: Record<ActiveTab, string> = {
@@ -49,19 +47,9 @@ const HomePage: React.FC = () => {
         <div className="absolute bottom-1/3 right-2/3 w-[240px] h-[240px] bg-purple-800/25 rounded-full blur-[95px]" />
       </div>
 
-      <Sidebar />
+      <Navbar />
 
       <Hero />
-
-      <div className="fixed top-4 right-4 z-[500] text-center">
-        <Button
-          onClick={toggleLanguage}
-          variant="outline"
-          className="mb-8 py-2 px-4 bg-purple-500/10 border-purple-500/50 text-purple-300 backdrop-blur-sm shadow-lg shadow-purple-500/20"
-        >
-          {translations.buttons.language}
-        </Button>
-      </div>
 
       <About />
 

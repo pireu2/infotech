@@ -8,7 +8,7 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="relative min-h-screen flex flex-col items-center justify-center text-center px-10 ml-3 mr-3"
+      className="relative min-h-screen flex flex-col items-center justify-center text-center px-10 ml-3 mr-3 pt-20 md:pt-24"
     >
       <div className="max-w-4xl relative">
         <div className="absolute inset-0 -m-10 bg-gradient-to-br from-purple-900/30 to-blue-900/20 rounded-2xl backdrop-blur-md border border-white/10 shadow-xl shadow-purple-500/10 z-0"></div>

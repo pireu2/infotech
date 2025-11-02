@@ -58,7 +58,7 @@ export default function EventDialog({
             </Button>
           </div>
 
-          <div className="relative h-36 md:h-48 bg-gradient-to-r from-purple-900/40 to-indigo-900/40 overflow-hidden">
+          <div className="relative h-42 md:h-60 bg-gradient-to-r from-purple-900/40 to-indigo-900/40 overflow-hidden">
             <div className="absolute inset-0 bg-gradient-to-b from-gray-900/0 to-gray-900/100" />
             {event.image && (
               <img
@@ -69,12 +69,12 @@ export default function EventDialog({
             )}
           </div>
 
-          <h2 className="pl-4 md:pl-6  pt-2 text-xl md:text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-300 to-blue-300 drop-shadow-lg pr-8">
+          <h2 className="pl-4 md:pl-6  pt-2 text-xl md:text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-300 to-blue-300 drop-shadow-lg ">
             {event.title}
           </h2>
 
-          <div className="p-4 md:p-6 overflow-y-auto flex-grow">
-            <div className="flex flex-col md:flex-row gap-3 mb-6">
+          <div className="px-4 py-2 pb-4 md:px-6 overflow-y-auto flex-grow">
+            <div className="flex flex-col gap-3 mb-6">
               <div className="flex items-center space-x-3 bg-gray-800/50 backdrop-blur-sm p-3 rounded-lg border border-gray-700/50 flex-1">
                 <div className="bg-purple-500/20 p-2 rounded-md flex-shrink-0">
                   <CalendarDays className="h-4 w-4 md:h-5 md:w-5 text-purple-400" />
