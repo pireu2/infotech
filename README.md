@@ -64,7 +64,7 @@ src/
 │   ├── TeamMemberCards.tsx   # Team members display
 │   ├── SponsorsDisplay.tsx   # Sponsors section
 │   ├── events/
-│   │   ├── EventDialog.tsx   # Event details modal
+│   │   ├── Events.tsx   # Event details modal
 │   │   ├── EventTabs.tsx     # Event tabs container
 │   │   └── tabs/
 │   │       ├── ContestTab.tsx
@@ -133,13 +133,6 @@ npm run preview
 
 ```bash
 npm run lint
-```
-
-### Deployment to github pages
-
-```bash
-git remote set-url origin <github pages link>
-npm run deploy -- -m "<deployment message>"
 ```
 
 ## 🌍 Internationalization
