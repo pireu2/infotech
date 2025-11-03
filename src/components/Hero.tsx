@@ -38,10 +38,10 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="relative min-h-screen flex flex-col items-center justify-center text-center "
+      className="relative min-h-screen flex flex-col items-center justify-center text-center pt-20 md:pt-24"
     >
-      <div className="relative max-w-6xl w-full px-2 mt-10">
-        <h1 className="text-3xl md:text-5xl font-semibold text-white mb-4 mt-4 font-display">
+      <div className="relative max-w-6xl w-full px-2">
+        <h1 className="text-3xl md:text-5xl font-semibold text-white mb-4 font-display">
           {t.hero.title}
         </h1>
         <p className=" md:text-xl  text-gray-200 max-w-4xl mx-auto">
@@ -53,7 +53,7 @@ export default function Hero() {
         >
           {t.hero.badge}
         </Badge>
-        <div className="relative w-full h-[600px] md:h-[800px] rounded-3xl overflow-hidden border-1 border-white/20 ">
+        <div className="relative w-full h-[550px] md:h-[700px] rounded-3xl overflow-hidden border-1 border-white/20 ">
           <img
             src="/images/background.jpg"
             alt={t.hero.imageAlt}
