@@ -16,6 +16,15 @@ const teamMembers: TeamMember[] = teamMembersData.map((member: any) => ({
 export default function TeamMemberCards() {
   const { translations } = useTranslation();
 
+  const getMobileOrder = (members: TeamMember[]) => {
+    if (members.length === 0) return members;
+    const reordered = [members[1], members[0], ...members.slice(2)];
+    return reordered.filter(Boolean);
+  };
+
+  const mobileOrderMembers = getMobileOrder(teamMembers);
+  const desktopOrderMembers = teamMembers;
+
   return (
     <div id="team" className="container py-12 mx-auto pl-3 pr-3 z-3">
       <div className="relative">
@@ -23,11 +32,25 @@ export default function TeamMemberCards() {
           {translations.team.title}
         </h2>
       </div>
-      <div className="flex justify-center">
+
+      {/* Mobile Layout */}
+      <div className="flex justify-center lg:hidden">
         <div className="max-w-7xl w-full">
-          {/* First row: 3 members */}
+          <div className="flex flex-wrap justify-center gap-10">
+            {mobileOrderMembers.map((member) => (
+              <div key={member.name} className="w-full sm:w-[calc(50%-20px)]">
+                <TeamMemberCard member={member} />
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      {/* Desktop Layout */}
+      <div className="hidden lg:flex justify-center">
+        <div className="max-w-7xl w-full">
           <div className="flex flex-wrap justify-center gap-10 mb-10">
-            {teamMembers.slice(0, 3).map((member) => (
+            {desktopOrderMembers.slice(0, 3).map((member) => (
               <div
                 key={member.name}
                 className="w-full sm:w-[calc(50%-20px)] lg:w-[calc(25%-30px)]"
@@ -36,9 +59,8 @@ export default function TeamMemberCards() {
               </div>
             ))}
           </div>
-          {/* Second row: 4 members */}
           <div className="flex flex-wrap justify-center gap-10">
-            {teamMembers.slice(3, 7).map((member) => (
+            {desktopOrderMembers.slice(3, 7).map((member) => (
               <div
                 key={member.name}
                 className="w-full sm:w-[calc(50%-20px)] lg:w-[calc(25%-30px)]"
