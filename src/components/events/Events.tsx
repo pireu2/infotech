@@ -11,10 +11,10 @@ const Events: React.FC = () => {
   const { translations } = useTranslation();
 
   const TabNames: Record<ActiveTab, string> = {
+    contest: translations.events.tabs.contest,
     infonight: translations.events.tabs.infonight,
     infoweek: translations.events.tabs.infoweek,
     trainings: translations.events.tabs.trainings,
-    contest: translations.events.tabs.contest,
   };
 
   return (
@@ -23,7 +23,7 @@ const Events: React.FC = () => {
         {translations.events.title}
       </h2>
 
-      <Tabs defaultValue="infonight" className="w-full">
+      <Tabs defaultValue="contest" className="w-full">
         <TabsList className="grid mx-auto h-12 md:h-14 grid-cols-4 mb-8 bg-gray-800/50 backdrop-blur-sm border border-purple-500/30">
           {Object.entries(TabNames).map(([key, label]) => {
             const tab = key as ActiveTab;
