@@ -55,7 +55,7 @@ export default function Hero() {
         </Badge>
         <div className="relative w-full h-[550px] md:h-[700px] rounded-3xl overflow-hidden border-1 border-white/20 ">
           <img
-            src="/images/background.jpg"
+            src="/images/background.webp"
             alt={t.hero.imageAlt}
             className="w-full h-full object-cover "
           />
