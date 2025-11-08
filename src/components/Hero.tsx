@@ -85,7 +85,7 @@ export default function Hero() {
             </div>
           </div>
 
-          <div className="absolute md:top-6 md:right-6 top-2 right-2 ">
+          <div className="absolute md:top-6 md:right-6 top-2 right-2 flex gap-2 flex-col items-end">
             <div className="bg-white/10 backdrop-blur-md rounded-lg p-4 border border-white/20 min-w-[200px]">
               <div className="text-white text-sm font-semibold mb-2">
                 {t.hero.cards.nextEvent.title}
@@ -132,6 +132,15 @@ export default function Hero() {
                 </div>
               </div>
             </div>
+            <Button
+              variant="outline"
+              onClick={() => {
+                window.location.href = t.hero.cards.nextEvent.url;
+              }}
+              className="py-5 px-4 md:text-lg bg-transparent font-display  border-purple-500/30 text-purple-300 backdrop-blur-md shadow-lg shadow-purple-500/20 hover:bg-purple-500/10 transition-all duration-300"
+            >
+              {t.hero.button}
+            </Button>
           </div>
 
           <div className="absolute md:bottom-6 md:left-6 bottom-2 left-2">
@@ -157,20 +166,6 @@ export default function Hero() {
                 {t.hero.cards.projectsCompleted.subtitle}
               </div>
             </div>
-          </div>
-
-          <div className="absolute md:bottom-6 md:right-6 bottom-2 right-2">
-            <Button
-              variant="outline"
-              onClick={() => {
-                document
-                  .getElementById("about")
-                  ?.scrollIntoView({ behavior: "smooth" });
-              }}
-              className="py-5 px-4 md:text-lg bg-transparent font-display  border-purple-500/30 text-purple-300 backdrop-blur-md shadow-lg shadow-purple-500/20 hover:bg-purple-500/10 transition-all duration-300"
-            >
-              {t.hero.button}
-            </Button>
           </div>
         </div>
       </div>
