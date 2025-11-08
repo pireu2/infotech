@@ -2,16 +2,16 @@
 
 A modern, responsive website for InfoTech - the IT organization of UTCN (Technical University of Cluj-Napoca). Built with React, TypeScript, and cutting-edge web technologies.
 
-## 🚀 Features
+##  Features
 
-### 🌟 Core Functionality
+### Core Functionality
 
 - **Multilingual Support**: Full English and Romanian translations
 - **Responsive Design**: Optimized for desktop, tablet, and mobile devices
 - **Smooth Animations**: Powered by Framer Motion for enhanced user experience
 - **Modern UI**: Clean, professional design with gradient effects and glassmorphism
 
-### 📱 Sections
+###  Sections
 
 - **Hero Section**: Eye-catching landing area with call-to-action
 - **About Section**: Information about InfoTech and its mission
@@ -23,7 +23,7 @@ A modern, responsive website for InfoTech - the IT organization of UTCN (Technic
 - **Team Section**: Meet the InfoTech team members
 - **Sponsors Section**: Display of supporting organizations
 
-### 🎨 Technical Features
+###  Technical Features
 
 - **Event Management**: Detailed event cards with trainer information, dates, and descriptions
 - **Interactive Modals**: Event details displayed in beautiful dialog overlays
@@ -31,7 +31,7 @@ A modern, responsive website for InfoTech - the IT organization of UTCN (Technic
 - **Language Toggle**: Seamless switching between English and Romanian
 - **Accessibility**: Screen reader support and keyboard navigation
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 ### Frontend Framework
 
@@ -51,7 +51,7 @@ A modern, responsive website for InfoTech - the IT organization of UTCN (Technic
 - **ESLint** - Code linting and formatting
 - **TypeScript ESLint** - Type-aware linting rules
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 src/
@@ -86,7 +86,7 @@ src/
     └── ActiveTab.ts          # TypeScript type definitions
 ```
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### Prerequisites
 
@@ -135,7 +135,7 @@ npm run preview
 npm run lint
 ```
 
-## 🌍 Internationalization
+## Internationalization
 
 The website supports two languages:
 
@@ -144,7 +144,7 @@ The website supports two languages:
 
 Language switching is available via the toggle button in the top-right corner. All content including event descriptions, navigation labels, and UI text is fully translated.
 
-## 🎯 Key Components
+##  Key Components
 
 ### Event Management System
 
@@ -166,7 +166,7 @@ Language switching is available via the toggle button in the top-right corner. A
 - **Smooth Transitions**: Page navigation and tab switching
 - **Accessibility**: Screen reader support and keyboard navigation
 
-## 🤝 Contributing
+##  Contributing
 
 1. Fork the repository
 2. Create a feature branch (`git checkout -b feature/amazing-feature`)
@@ -174,17 +174,17 @@ Language switching is available via the toggle button in the top-right corner. A
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
-## 📄 License
+##  License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🙏 Acknowledgments
+##  Acknowledgments
 
 - **OSUT Cluj** - Organization of UTCN Students
 - **UTCN** - Technical University of Cluj-Napoca
 - **InfoTech Team** - For their dedication and hard work
 
-## 📞 Contact
+##  Contact
 
 For questions or support, please contact the InfoTech team.
 
