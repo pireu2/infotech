@@ -1,0 +1,24 @@
+# Robots.txt for InfoTech Website
+
+User-agent: *
+Allow: /
+
+Disallow: /src/
+Disallow: /node_modules/
+Disallow: /.git/
+Disallow: /backup/
+Disallow: /webp-output/
+Disallow: /*.json$
+Disallow: /*.log$
+Disallow: /*.tmp$
+
+Allow: /images/
+Allow: /assets/
+Allow: /*.css
+Allow: /*.js
+Allow: /*.webp
+Allow: /*.jpg
+Allow: /*.png
+Allow: /*.svg
+
+Crawl-delay: 1
