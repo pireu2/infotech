@@ -10,12 +10,10 @@
   --color-foreground: #ffffff;
 }
 
-/* Smooth scrolling */
 html {
   scroll-behavior: smooth;
 }
 
-/* Hide scrollbar but keep functionality */
 body::-webkit-scrollbar {
   width: 8px;
 }
