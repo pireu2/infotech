@@ -4,7 +4,7 @@
 
 @theme {
   --font-display: "Momo Trust Display", sans-serif;
-  --font-sans: var(--font-open-sans), "Open Sans", sans-serif;
+  --font-sans: "Open Sans", ui-sans-serif, system-ui, sans-serif;
 
   --color-background: #0c091e;
   --color-foreground: #ffffff;

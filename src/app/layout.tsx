@@ -1,12 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Open_Sans } from "next/font/google";
 import "./globals.css";
-
-const openSans = Open_Sans({
-  subsets: ["latin"],
-  variable: "--font-open-sans",
-  display: "swap",
-});
 
 export const viewport: Viewport = {
   width: "device-width",
@@ -124,7 +117,7 @@ export default function RootLayout({
           crossOrigin="anonymous"
         />
         <link
-          href="https://fonts.googleapis.com/css2?family=Momo+Trust+Display&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300..800&family=Momo+Trust+Display&display=swap"
           rel="stylesheet"
         />
 
@@ -141,9 +134,7 @@ export default function RootLayout({
         <meta name="geo.position" content="46.7712;23.6236" />
         <meta name="ICBM" content="46.7712, 23.6236" />
       </head>
-      <body className={`${openSans.variable} font-sans antialiased`}>
-        {children}
-      </body>
+      <body className="font-sans antialiased">{children}</body>
     </html>
   );
 }
